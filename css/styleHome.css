@@ -72,3 +72,21 @@ hr{
 #gmbr5{
   padding-top: 38px;
 }
+
+@media screen and (min-width: 500px) {
+  body{
+    width:200px;
+  }
+  sidebar{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body{
+    width:500px;
+  }
+  sidebar{
+    display: block;
+  }
+}

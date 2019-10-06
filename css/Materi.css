@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+ 
+ body {
+    background-color: LightGray;
+    font-family: verdana;
+    font-size:20px;
+    padding: 0;
+ margin: 0;
+ padding-bottom:10px;
+  }
+
+  .header{
+    position: relative;
+    text-align: center;
+    background: rgba(0,0,0,0.1);
+    font-family: Arial;
+    border-bottom: 2px solid rgba(0,0,0,0.7);
+   }
+   
+   .container{
+    display: inline-block;
+    width: 1367px;
+    min-height:100%;
+    position:relative; 
+   }
+   
+   .navbar{
+    display: flex;
+   }
+
+   .menu{
+    flex: 3;
+    display: flex;
+   }
+
+  .logo {
+    float:left;
+    width:12%; /* The width is 20%, by default */
+    flex: 1;      
+     }
+     .logo a{
+      display: block;
+      text-decoration: none;
+      padding-top: 15px;
+      padding-bottom: 9px;
+      padding-left:9px;
+      color: #fff;
+      background: rgba(0,0,0,0.7); 
+      font-weight: bold;
+     }
+  
+  .main {
+    padding-top: 42px;
+    width: 75%; /* The width is 60%, by default */
+  background-color: #333;
+
+  }
+
+  .nav{
+    flex: 3
+   }
+
+   .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+      }
+  
+      .nav ul li {
+    float: right;
+    display: inline-block;
+    list-style: none;
+  }
+  
+  .nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .nav ul li a:hover{
+    color: rgba(0,0,0,0.7);
+    text-shadow: 0 0 1px rgba(0,0,0,0.1);
+   }
+   .nav a#toggle{
+    display: none;
+   }
+
+/*Jika layar kurang dari sama dengan 900px*/
+@media only screen and (max-width: 1367px){
+  .container{
+   width: 100%;
+  }
+  .nav ul{
+   display: block;
+  }
+ }
+
+ /*Jika layar berukuran kurang dari sama dengan 700px*/
+@media only screen and (max-width: 700px){
+  .header{
+   border-bottom: none;
+  }
+ 
+  .navbar{
+   display: block;
+  }
+ 
+  .menu{
+   margin-top: 10px;
+  }
+ 
+  .nav{
+   flex: 1;
+  }
+  .nav a#toggle{
+   display: block;
+   text-decoration: none;
+   background: rgba(0,0,0,0.4);
+   color: #fff;
+   font-weight: bold;
+   padding-top: 18px;
+   padding-bottom: 18px;
+  }
+  .nav ul{
+   display: none;
+   margin: 10px 0;
+   padding: 0;
+  }
+  .nav ul li{
+   display: block;
+  }
+  .nav ul li a{
+   display: block;
+   padding: 7px 20px;
+   margin: 0;
+  }
+ 
+  .login{
+   flex: 1;
+  }
+ }
+
+ /* content */
+ .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.submenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.submenu li:hover {
+  background-color: #0099cc;
+}
+
+/* bawah */
+.footer {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 20px;
+  line-height: 50px;
+  background: #333;
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+}

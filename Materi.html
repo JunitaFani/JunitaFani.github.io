@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruang Belajar/Materi</title>
+    <link rel="stylesheet" type="text/css" href="css/Materi.css">
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        
+         <div class="navbar">
+            <div class="menu">
+    <div class="logo">
+        <a href="" id="gmbr0">
+            <img src="Pic\rb.jpg" height="90px" width="118px">
+          </a>
+      </div>
+        <div class="main">
+            <nav class="nav">
+                <a id="toggle" href="#">Menu</a>
+                    <ul id="dropdown">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a class="active" href="Materi.html">Materi</a></li>
+                        <li><a href="#">Kelas Online</a></li>
+                        <li><a href="#">Rapor</a></li>
+                        <li><a href="#">Profil</a></li>
+                        <li><a href="#">Bantuan</a></li>
+                      </ul>
+               </nav>
+          </div>
+        </div>
+        </div>
+        </div>
+    <!-- content -->
+    <div class="row">
+        <div class="col-3 submenu">
+          <ul>
+            <li>Gaya</li>
+            <li>Elektrodinamika</li>
+            <li>Kecepatan dan Percepatan</li>
+            <li>Satuan</li>
+          </ul>
+        </div>
+        <div class="col-9">
+          <h1>Gaya</h1>
+          <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+          <p>Resize the browser window to see how the content respond to the resizing.</p>
+        </div>
+
+      <!-- bawah -->
+      <div class="col-12">
+      <div class="footer">© copyright w3schools.com</div>
+    </div>
+  </div>
+</div>
+    <script src="jquery.js"></script> 
+<script>
+ $(document).ready(function() {
+  $("#toggle").click(function() {
+   $("#dropdown").slideToggle("fast");
+  });
+ });
+</script>
+  </body>
+  </html>

@@ -1,88 +1,322 @@
 body {
-  background-color: LightGray;
-  font-family: verdana;
-  font-size:25px;
+	margin: 0;
+	padding: 0;
+	background-color: LightGray;
+	font-family: verdana;
+	font-size:20px;
+	padding-bottom:10px;
 }
+
+* {
+	box-sizing: border-box;
+}
+
+.header{
+	position: relative;
+	text-align: center;
+	background: rgba(0,0,0,0.1);
+	font-family: Arial;
+	border-bottom: 2px solid rgba(0,0,0,0.7);
+}	
+
+.container{
+	display: inline-block;
+	width: 1367px;
+	min-height:100%;
+	position:relative; 
+}
+
 .navbar{
-  width:100%;
-  height: 100%;
-  cellpadding:0;
-  cellspacing:0;
-  text-align: left;
-  border:0;
-
-}
-#gmbr0{
-  margin-left: 23px;
-  padding-right: 793px;
+	display: flex;
 }
 
-b {
-  text-align: right;
-  padding: 14px 28px;
-  text-decoration: none;
-    color: black;
+.menu{
+	flex: 3;
+	display: flex;
 }
 
-b a:hover {
-  color: #7d7575;
+.logo {
+	float:left;
+	width:12%; /* The width is 20%, by default */
+	flex: 3;      
+}
+
+.logo a{
+	display: block;
+	text-decoration: none;
+	padding-top: 15px;
+	padding-bottom: 9px;
+	padding-left:9px;
+	color: #fff;
+	background:#333; 
+	font-weight: bold;
+}
+
+.logo a img{
+	height:90px;
+	width:118px;
+}
+
+.main {
+	padding-top: 20px;
+	width: 75%; /* The width is 60%, by default */
+	background-color: #333;
+}
+
+.nav{
+	flex: 3
+}
+    
+.nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+	
+.nav ul li {
+	float: right;
+	display: inline-block;
+	list-style: none;
+}
+
+.nav ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 20px 20px;
+	text-decoration: none;
+}
+
+.nav ul li a:hover{
+	color: rgba(0,0,0,0.7);
+	text-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+.nav a#toggle{
+	float: right;
+	padding: 14px 16px;
+	display: none;
+}
+
+/* content */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+    
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+    
+/* bawah */
+.footer {
+	width: 100%;
+	height: 50px;
+	padding-left: 10px;
+	padding-right: 20px;
+	line-height: 50px;
+	background: #333;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+        position: relative;
+	bottom: 0px;
+}
+
+.footer .tulisanKiri{
+	margin-left: 5%;
+	font-size: 25px;
+}
+
+.footer .tulisanKanan{
+	float: right;
+	margin-top: 5px;
+	margin-right: 5%;
+}
+
+.footer .tulisanKanan img{
+	width: 25px;
+}
+
+.active{
+	color: black;
+	border-bottom: 5px solid white;
+}
+
+.banner{
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	position: relative;
+	overflow: hidden;
+	background-size: cover; 
+}
+
+.banner img{
+	height: 388px;
+	width: 100%;
 }
 
 p {
-  text-align: justify;
-  font-family: "Comic Sans MS";
-}
-
-.column {
-  float: left;
-  width: 45%;
-  padding-top: 39px;
-  padding-left: 15px;
+	text-align: justify;
+	font-family: "Comic Sans MS";
 }
 
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-#y{
-    padding-right: 995px;
-}
-
-#x{
-    padding-left: 60px;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 hr{
-  color: black;
+  	color: black;
 }
 
-#gmbr5{
-  padding-top: 42px;
+.news{
+	background-color: LightGray;
+	padding: 50px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
 }
 
-/* @media screen and (min-width: 500px) {
-  body{
-    width:200px;
-  }
-  sidebar{
-    display: none;
-  }
-} */
+.news .konten{
+	position: relative;
+	float: left;
+	padding: 0px 45px;
+	padding-bottom: 70px;
+}
 
-/* @media screen and (min-width: 1000px) {
-  body{
-    width:500px;
-  }
-  sidebar{
-    display: block;
-  }
-} */
+.news .konten img{
+	width: 405px;
+	height: 250px;
+	object-fit: cover;
+}
+
+.news .konten .tulisan{
+	display: flex;
+	flex-wrap: wrap;
+	float: right;
+	width: 45%;
+	padding-top: 0px;
+	padding-left: 2px;
+}
+
+/*Jika layar kurang dari sama dengan 900px*/
+@media only screen and (max-width: 1367px){
+	.container{
+		width: 100%;
+	}
+	.nav ul{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 926px){
+	.news .konten img{
+		width: 70%;
+		height: 60%;
+		object-fit: cover;
+	}
+	.news .konten .tulisan{
+		float: left;
+		width: 100%;
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+}
+
+/*Jika layar berukuran kurang dari sama dengan 700px*/
+@media only screen and (max-width: 742px){
+	.header{
+    	border-bottom: none;
+	}
+
+	.navbar{
+    	display: block;
+	}
+
+	.menu{
+    	margin-top: 10px;
+	}
+
+	.nav{
+    	flex: 1;
+	}
+
+	.nav a#toggle{
+		display: block;
+		text-decoration: none;
+		background: #333;
+		color: #fff;
+		font-weight: bold;
+		padding-top: 2px;
+		padding-bottom: 18px;
+	}
+
+	.nav ul{
+		display: none;
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	.nav ul li{
+    	display: block;
+	}
+
+	.nav ul li a{
+		display: block;
+		padding: 7px 20px;
+		margin: 0;
+	}
+
+	.login{
+    	flex: 1;
+	}
+}
+
+@media only screen and (max-width: 990px){
+	.banner img{
+		height: 5%;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 494px){
+	.logo a img{
+        height:80px;
+        width:80px;
+    }
+}
+
+@media only screen and (max-width: 348px){
+	.logo a img{
+        height:70px;
+        width:70px;
+    }
+
+    .footer .tulisanKiri{
+        margin-left: 5%;
+        font-size: 15px;
+    }
+}

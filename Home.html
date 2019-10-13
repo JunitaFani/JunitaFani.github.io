@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8">
-  <title>Ruang Belajar/Home</title>
-    <link rel="stylesheet" type="text/css" href="css/styleHome.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Belajar/Home</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div class="navbar">
-    <a href="" id="gmbr0">
-      <img src="Pic\rb.jpg" height="90px" width="118px">
-    </a>
-    <b><a title="Home">Home</a></b>
-    <b><a title="Materi">Materi</a></b>
-    <b><a title="Bantuan">Kelas Online</a></b>
-    <b><a title="About">Rapor</a></b>
-    <b><a title="Profil">Profil</a></b>
-    <b><a href="Dashboard.html"title="Logout">Logout</a></b>
-  </div>
-  <hr size="2px" >
-  <div>
-    <a>
-      <img src="Pic\newrb.jpg" height="388px">
-    </a>
-  </div>
-  <div class="row">
-    <div class="column">
-      <a href="">
-        <img src="Pic\rb3.png" height="230px" id="gmbr4">
-      </div>
-      <div class="column">
-        <h2>Juara Olimpiade Matematika</h2>
-        <p>
-          Putra Indonesia ini telah memenangkan penghargaan The Best Theory dalam Olympiade matematika untuk tingkat Sekolah Dasar 3 tahun lalu. Pada saat itu, dia masih kelas 5 SD Santa Theresia Jakarta Pusat. Yang lebih mengejutkan lagi, dia adalah peserta termuda dan meraih medali emas.
-        </p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <a href="">
-          <img src="Pic\2.jpg" height="250px" width="405px" id="gmbr5">
-        </div>
-        <div class="column">
-          <h2>Juara Tiga Lomba Olimpiade Matematika ITS</h2>
-          <p>
-            Dua murid SD Nasional KPS Balikpapan meraih juara ketiga atau second runner-up pada lomba Olimpiade Matematika ITS (OMITS) Surabaya. Mereka adalah Noriko Khang dan Fakhri. Kejuaraan yang berlangsung 10-11 Februari 2018, di ITS Surabaya tersebut merupakan kejuaraan yang sangat bergengsi untuk tingkat sekolah dasar.
-          </p>
-        </div>
-      </div>
-    <hr size="2px" >
-    <div class="bawah">
-      <b><a title="Team">Team</a></b>
-      <b><a id="y" title="Contact">Contact</a></b>
-      <a href="">
-        <img src="Pic\tw.png" height="40px" id="x">
-      </a>
-      <a href="">
-        <img src="Pic\fb.png" height="40px" id="x">
-      </a>
-      <a href="">
-        <img src="Pic\ig.png" height="40px" id="x">
-      </a>
-    </div>
-  </body>
-  </html>
+    <div class="container">
+		<div class="header">
+			<div class="navbar">
+				<div class="menu">
+					<div class="logo">
+						<a href="">
+							<img src="Pic\rb.jpg">
+						</a>
+					</div>
+					<div class="main">
+						<nav class="nav">
+							<a id="toggle" href="#"><i class="fa fa-bars"></i></a>
+							<ul id="dropdown">
+								<li><a href="#">Bantuan</a></li>
+								<li><a href="Profil.html" >Profil</a></li>
+								<li><a href="#">Rapor</a></li>
+								<li><a href="#">Kelas Online</a></li>
+								<li><a href="Materi.html">Materi</a></li>
+								<li><a href="Home.html" class="active">Home</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr size="2px" >
+		<div class="banner">
+			<img src="Pic\newrb.jpg">
+		</div>
+		<div class="news">
+			<div class="konten">
+				<img src="Pic\rb3.png">
+				<div class="tulisan">
+					<h2>Juara Olimpiade Matematika</h2>
+					<p>
+						Putra Indonesia ini telah memenangkan penghargaan The Best Theory dalam Olympiade matematika untuk tingkat Sekolah Dasar 3 tahun lalu. Pada saat itu, dia masih kelas 5 SD Santa Theresia Jakarta Pusat. Yang lebih mengejutkan lagi, dia adalah peserta termuda dan meraih medali emas.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="news">
+			<div class="konten">
+				<img src="Pic\2.jpg"></<img>
+				<div class="tulisan">
+					<h2>Juara Tiga Lomba Olimpiade Matematika ITS</h2>
+					<p>
+						Dua murid SD Nasional KPS Balikpapan meraih juara ketiga atau second runner-up pada lomba Olimpiade Matematika ITS (OMITS) Surabaya. Mereka adalah Noriko Khang dan Fakhri. Kejuaraan yang berlangsung 10-11 Februari 2018, di ITS Surabaya tersebut merupakan kejuaraan yang sangat bergengsi untuk tingkat sekolah dasar.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr size="2px" >
+	<div class="footer">
+		<div class="tulisanKiri">
+			<a title="Team">Team</a>
+			<a title="Contact">Contact</a>
+		</div>
+		<div class="tulisanKanan">
+			<img src="Pic\tw.png">
+			<img src="Pic\fb.png">
+			<img src="Pic\ig.png">
+		</div>
+	</div>
+	<script src="js/jquery.js"></script> 
+	<script>
+		$(document).ready(function() {
+			$("#toggle").click(function() {
+				$("#dropdown").slideToggle("fast");
+			});
+		});
+	</script>
+</body>
+</html>

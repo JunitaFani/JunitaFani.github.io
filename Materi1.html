@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Ruang Belajar/Materi</title>
+    <link rel="stylesheet" type="text/css" href="css/Materi.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Pic/rb.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class="container">
+                <div class="header">
+                    <div class="navbar">
+                        <div class="menu">
+                            <div class="logo">
+                                <a href="Index.html">
+                                    <img src="Pic\rb.jpg">
+                                </a>
+                            </div>
+                            <div class="main">
+                                <nav class="nav">
+                                    <a id="toggle" href="#"><i class="fa fa-bars"></i></a>
+                                    <ul id="dropdown">
+                                        <li><a href="Login.html" >Login</a></li>
+                                        <li><a href="SignUp.html">SignUp</a></li>
+                                        <li><a href="About.html">About</a></li>
+                                        <li><a href="#">Bantuan</a></li>
+                                        <li><a href="Materi1.html" >Materi</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr size="2px" >
+            <div class="Row center">
+                <div class="Column card">
+                    <h3><a href="#">Bahasa Indonesia</a></h3>
+                </div>
+                <div class="Column card">
+                    <h3><a href="#">Matematika</a></h3>
+                </div>
+                <div class="Column card">
+                    <h3><a href="MateriDetail1.html">IPA</a></h3>
+                </div>
+                <br>
+            </div>
+            <div class="Row center">
+                    <div class="Column card">
+                        <h3><a href="#">PKN</a></h3>
+                    </div>
+                    <div class="Column card">
+                        <h3><a href="#">Agama</a></h3>
+                    </div>
+                    <div class="Column card">
+                        <h3><a href="#">IPS</a></h3>
+                    </div>
+                    <br>
+                </div>
+                <div class="Row center">
+                        <div class="Column card">
+                            <h3><a href="#">Bahasa Inggris</a></h3>
+                        </div>
+                        <div class="Column card">
+                            <h3><a href="#">Bahasa Jawa</a></h3>
+                        </div>
+                        <div class="Column card">
+                            <h3><a href="#">Pancasila</a></h3>
+                        </div>
+                        <br>
+                    </div>
+    <hr size="2px" >
+	<div class="footer">
+        <div class="tulisanKiri">
+            <a title="Team">Team</a>
+            <a title="Contact">Contact</a>
+        </div>
+        <div class="tulisanKanan">
+            <img src="Pic\tw.png">
+            <img src="Pic\fb.png">
+            <img src="Pic\ig.jpg">
+        </div>
+    </div>
+    <script src="js/jquery.js"></script> 
+    <script>
+        $(document).ready(function() {
+            $("#toggle").click(function() {
+        $("#dropdown").slideToggle("fast");
+            });
+        });
+    </script>
+</body>
+</html>

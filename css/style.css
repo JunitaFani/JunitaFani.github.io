@@ -1,10 +1,11 @@
-body {
+html,body {
 	margin: 0;
 	padding: 0;
 	background-color: LightGray;
 	font-family: verdana;
 	font-size:20px;
 	padding-bottom:10px;
+	height: 100%;
 }
 
 * {
@@ -204,7 +205,7 @@ hr{
 	position: relative;
 	float: left;
 	padding: 0px 45px;
-	padding-bottom: 70px;
+	padding-bottom: 10px;
 }
 
 .news .konten img{
@@ -218,8 +219,8 @@ hr{
 	flex-wrap: wrap;
 	float: right;
 	width: 45%;
-	padding-top: 0px;
 	padding-left: 2px;
+	margin-top: -30px;
 }
 
 /*Jika layar kurang dari sama dengan 900px*/
@@ -319,4 +320,26 @@ hr{
         margin-left: 5%;
         font-size: 15px;
     }
+}
+
+.readmore {
+	float: left;
+	/* margin: 30px 0 0 50px; */
+	padding: 10px 30px 11px 30px;
+	border: 2px solid black;
+	background: black;
+	transition: background .1s linear;
+	-webkit-transition: background .1s linear;
+	-moz-transition: background .1s linear;
+	-o-transition: background .1s linear;
+	text-decoration: none;
+	color: #fff;
+	font-family: "lato-regular", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	border-radius: 10px;
+}
+
+.bantuan {
+	text-align: center;
 }

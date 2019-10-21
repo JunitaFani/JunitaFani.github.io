@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Ruang Belajar/Materi</title>
+    <link rel="stylesheet" type="text/css" href="css/Materi.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="Pic/rb.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+    	<div class="header">
+        	<div class="navbar">
+            	<div class="menu">
+					<div class="logo">
+                        <a href="">
+							<img src="Pic\rb.jpg">
+                        </a>
+					</div>
+					<div class="main">
+                        <nav class="nav">
+						    <a id="toggle" href="#"><i class="fa fa-bars"></i></a>
+							<ul id="dropdown">
+                                <li><a href="#">Bantuan</a></li>
+                                <li><a href="Profil.html" >Profil</a></li>
+                                <li><a href="#">Rapor</a></li>
+                                <li><a href="#">Kelas Online</a></li>
+                                <li><a href="Materi.html" class="active">Materi</a></li>
+                                <li><a href="Home.html">Home</a></li>
+							</ul>
+                        </nav>
+					</div>
+                </div>
+			</div>
+        </div>
+        <div class="konten">
+            <div class="col-3 sidebar">
+                    <ul>
+                            <li><a href="MateriDetail2.html" >Gaya</a></li>
+                            <li><a href="MateriDetail2a.html" >Elektrodinamika</a></li>
+                            <li>Kecepatan dan Percepatan</li>
+                            <li>Satuan</li>
+                        </ul>
+			</div>
+			<div class="tulisan">
+                <h1>Gaya</h1>
+                <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+                <p>Resize the browser window to see how the content respond to the resizing.</p>
+            </div>
+        </div>
+    </div>
+    <hr size="2px" >
+	<div class="footer">
+        <div class="tulisanKiri">
+            <a title="Team">Team</a>
+            <a title="Contact">Contact</a>
+        </div>
+        <div class="tulisanKanan">
+            <img src="Pic\tw.png">
+            <img src="Pic\fb.png">
+            <img src="Pic\ig.jpg">
+        </div>
+    </div>
+    <script src="js/jquery.js"></script> 
+    <script>
+        $(document).ready(function() {
+            $("#toggle").click(function() {
+        $("#dropdown").slideToggle("fast");
+            });
+        });
+    </script>
+</body>
+</html>

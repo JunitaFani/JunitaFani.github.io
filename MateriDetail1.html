@@ -14,7 +14,7 @@
                     <div class="navbar">
                         <div class="menu">
                             <div class="logo">
-                                <a href="Index.html">
+                                <a href="index.html">
                                     <img src="Pic\rb.jpg">
                                 </a>
                             </div>
@@ -37,11 +37,11 @@
         <div class="konten">
             <div class="col-3 sidebar">
                 <ul>
-                        <li><a href="MateriDetail1.html" >Gaya</a></li>
-                        <li><a href="MateriDetail1a.html" >Elektrodinamika</a></li>
-                        <li>Kecepatan dan Percepatan</li>
-                        <li>Satuan</li>
-                    </ul>
+                    <li><a  href="MateriDetail1.html" >Gaya</a></li>
+                    <li><a href="MateriDetail1a.html" >Elektrodinamika</a></li>
+                    <li>Kecepatan dan Percepatan</li>
+                    <li>Satuan</li>
+                </ul>
 			</div>
 			<div class="tulisan">
                 <h1>Gaya</h1>
@@ -62,13 +62,29 @@
             <img src="Pic\ig.jpg">
         </div>
     </div>
-    <script src="js/jquery.js"></script> 
+    <script src="js/jquery.js"></script>
     <script>
         $(document).ready(function() {
             $("#toggle").click(function() {
         $("#dropdown").slideToggle("fast");
             });
         });
+    </script>
+    <script>
+    function readURL(input) {
+  if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      reader.onload = function(e) {
+          $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+          $('#imagePreview').hide();
+          $('#imagePreview').fadeIn(650);
+      }
+      reader.readAsDataURL(input.files[0]);
+  }
+}
+$("#imageUpload").change(function() {
+  readURL(this);
+});
     </script>
 </body>
 </html>

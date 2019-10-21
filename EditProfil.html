@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ruang Belajar/EditProfil</title>
+	<link rel="stylesheet" type="text/css" href="css/profil.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="Pic/rb.jpg" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="navbar">
+				<div class="menu">
+					<div class="logo">
+						<a href="">
+							<img src="Pic\rb.jpg">
+						</a>
+					</div>
+					<div class="main">
+						<nav class="nav">
+							<a id="toggle" href="#"><i class="fa fa-bars"></i></a>
+							<ul id="dropdown">
+								<li><a href="#">Bantuan</a></li>
+								<li><a href="Profil.html" class="active">Profil</a></li>
+								<li><a href="#">Rapor</a></li>
+								<li><a href="#">Kelas Online</a></li>
+								<li><a href="Materi2.html">Materi</a></li>
+								<li><a href="Home.html">Home</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="konten">
+			<div class="foto">
+				<img src="Pic\rb.jpg">
+			</div>
+			<div class="form">
+				<form name="myForm" onsubmit="return validateForm()" action="">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="Name">
+					<br>
+						<label for="nis">NIS</label>
+						<input type="text" id="nis" name="nis" placeholder="NIS">
+					<br>
+						<label for="username">Username</label>
+						<input type="text" id="username" name="username" placeholder="Username">
+					<br>
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password" placeholder="Password">
+					<br>
+						<input type="submit" value="Save">
+				</form>
+			</div>
+		</div>
+	</div>
+	<hr size="2px">
+	<div class="footer">
+		<div class="tulisanKiri">
+			<a title="Team">Team</a>
+			<a title="Contact">Contact</a>
+		</div>
+		<div class="tulisanKanan">
+			<img src="Pic\tw.png">
+			<img src="Pic\fb.png">
+			<img src="Pic\ig.png">
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#toggle").click(function() {
+				$("#dropdown").slideToggle("fast");
+			});
+		});
+	</script>
+	<script>
+		function validateForm() {
+			var name = document.forms["myForm"]["name"].value;
+			var nis = document.forms["myForm"]["nis"].value;
+			var username = document.forms["myForm"]["username"].value;
+			var password = document.forms["myForm"]["password"].value;
+
+
+			if (name == "") {
+				alert("Name harus diisi");
+				return false;
+			}if (nis == "") {
+				alert("NIS harus diisi");
+				return false;
+			}if (username == "") {
+				alert("Username harus diisi");
+				return false;
+			}if (password == "") {
+				alert("Password harus diisi");
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

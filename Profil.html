@@ -26,7 +26,7 @@
 								<li><a href="Profil.html" class="active">Profil</a></li>
 								<li><a href="#">Rapor</a></li>
 								<li><a href="#">Kelas Online</a></li>
-								<li><a href="Materi.html">Materi</a></li>
+								<li><a href="Materi2.html">Materi</a></li>
 								<li><a href="Home.html">Home</a></li>
 							</ul>
 						</nav>
@@ -36,24 +36,22 @@
 		</div>
 		<div class="konten">
 			<div class="foto">
-				<img src="Pic\rb.jpg">
+				<img src="Pic\profil.jpg">
 			</div>
-			<div class="form">
-				<form name="myForm" onsubmit="return validateForm()" action="">
-						<label for="name">Name</label>
-						<input type="text" id="name" name="name" placeholder="Name">
+			<div class="profil">
+						<label for="name">Name  :</label>
+            <label for="">Dinda dan Nita</label>
 					<br>
-						<label for="nis">NIS</label>
-						<input type="text" id="nis" name="nis" placeholder="NIS">
+						<label for="nis">NIS  :</label>
+            <label for="">1234567</label>
 					<br>
-						<label for="username">Username</label>
-						<input type="text" id="username" name="username" placeholder="Username">
+						<label for="username">Username  :</label>
+            <label for="">DindaNita</label>
 					<br>
-						<label for="password">Password</label>
-						<input type="password" id="password" name="password" placeholder="Password">
-					<br>
-						<input type="submit" value="Submit">
-				</form>
+						<label for="address">Address  :</label>
+            <label for="">Jember Terbina</label>
+            <br><br>
+			<a type="submit" href="EditProfil.html" name="Edit">Edit</a>
 			</div>
 		</div>
 	</div>
@@ -76,29 +74,6 @@
 				$("#dropdown").slideToggle("fast");
 			});
 		});
-	</script>
-	<script>
-		function validateForm() {
-			var name = document.forms["myForm"]["name"].value;
-			var nis = document.forms["myForm"]["nis"].value;
-			var username = document.forms["myForm"]["username"].value;
-			var password = document.forms["myForm"]["password"].value;
-
-
-			if (name == "") {
-				alert("Name harus diisi");
-				return false;
-			}if (nis == "") {
-				alert("NIS harus diisi");
-				return false;
-			}if (username == "") {
-				alert("Username harus diisi");
-				return false;
-			}if (password == "") {
-				alert("Password harus diisi");
-				return false;
-			}
-		}
 	</script>
 </body>
 </html>

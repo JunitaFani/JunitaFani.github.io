@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Ruang Belajar/SignUp</title>
 	<link rel="stylesheet" type="text/css" href="css/loginSignup.css">
 	<link rel="shortcut icon" type="image/x-icon" href="Pic/rb.jpg" />
 </head>
+
 <body>
+	<div class="box">
 		<div>
-				<h2>Login</h2>
-			</div>
-	<div class="konten">
-		<div class="form">
-			<form name="myForm" onsubmit="return validateForm()" action="Home.html	">
-					<label for="username">Username</label>
-					<br>
-					<input type="text" id="username" name="username" placeholder="Username">
-				<br>
-					<label for="password">Password</label>
+			<h1 style="font-size: 35px;">Login</h1>
+		</div>
+		<div class="konten">
+			<div class="form">
+				<form name="myForm" onsubmit="return validateForm()" action="Home.html	">
+					<input type="text" id="username" name="username" required pattern="[A-Za-z]+" placeholder="Username">
 					<br>
 					<input type="password" id="password" name="pasword" placeholder="Password">
-				<br>
-				<br>	<input type="submit" value="Login">
-			</form>
+					<br>
+					<br> <button onclick="window.location.href='Index.html'">Kembali</button>&nbsp;&nbsp;&nbsp;
+					<input type="submit" value="Login">
+				</form>
+			</div>
 		</div>
 	</div>
 	<script>
@@ -32,11 +33,12 @@
 			if (username == "") {
 				alert("Username harus diisi");
 				return false;
-			}if (password == "") {
+			} if (password == "") {
 				alert("Password harus diisi");
 				return false;
 			}
 		}
 	</script>
 </body>
+
 </html>

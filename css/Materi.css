@@ -27,6 +27,20 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.materi .content{
+	position: relative;
+	float: left;
+	padding: 0px 10px;
+	padding-bottom: 35px;
+}
+
+.materi .content img{
+	width: 250px;
+	height: 175px;
+	object-fit: cover;
+	padding-top: 20px;
+}
+
 .konten{
 	position: relative;
     float: left;

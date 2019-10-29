@@ -6,26 +6,23 @@
 	<link rel="shortcut icon" type="image/x-icon" href="Pic/rb.jpg" />
 </head>
 <body>
-		<div>
-				<h2>Sign Up</h2>
-			</div>
+		<div class="box">
+				<div>
+					<h1 style="font-size: 35px;">Sign Up</h1>
+				</div>
 	<div class="konten">
 		<div class="form">
 			<form name="myForm" onsubmit="return validateForm()" action="Login.html">
-					<label for="username">Username</label>
-					<br>
 					<input type="text" id="username" name="username" placeholder="Username">
 				<br>
-					<label for="email">Email</label><br>
 					<input type="email" id="email" name="email" placeholder="Email">
 				<br>
-					<label for="password">Password</label>
-					<br>
 					<input type="password" id="password" name="pasword" placeholder="Password">
-				<br>
-					<input type="submit" value="Sign Up">
+					<br> <button onclick="window.location.href='Index.html'">Kembali</button>&nbsp;&nbsp;&nbsp;
+					<input type="submit" value="Login">
 			</form>
 		</div>
+	</div>
 	</div>
 	<script>
 		function validateForm() {

@@ -21,6 +21,7 @@ body {
 .konten .foto{
 	/* display: flex; */
 	padding-left: 20%;
+	text-align: center;
 }
 
 .konten .foto img{

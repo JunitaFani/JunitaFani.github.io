@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="css/profil.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="shortcut icon" type="image/x-icon" href="Pic/rb.jpg" />
+	<script src="js/js.js"></script>
+	<script src="js/jquery.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -37,8 +39,11 @@
 		</div>
 		<div class="konten">
 			<div class="foto">
-				<img src="Pic\rb.jpg">
-			</div>
+					<img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="avatar">
+					<h6>Photo</h6>
+					<input type="file" name="gambar" id="preview_gambar"/>
+					<img src="#" id="gambar_nodin" width="400" alt="Preview Gambar"/>
+				  </div></hr><br>
 			<div class="form">
 				<form name="myForm" onsubmit="return validateForm()" action="">
 						<label for="name">Name</label>

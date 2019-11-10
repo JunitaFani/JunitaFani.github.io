@@ -376,6 +376,31 @@ hr{
 	}
 }
 
+.Row
+{
+	display: table;
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 40px; 
+}
+
+.Column
+{
+    display: table-cell;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 20px;
+    padding-bottom: 15px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 @media only screen and (max-width: 494px){
 	.logo a img{
         height:80px;

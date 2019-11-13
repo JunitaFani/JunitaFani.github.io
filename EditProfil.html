@@ -24,7 +24,7 @@
 						<nav class="nav">
 							<a id="toggle" href="#"><i class="fa fa-bars"></i></a>
 							<ul id="dropdown">
-									<li><a href="Index.html">Logout</a></li>
+								<li><a href="Index.html">Logout</a></li>
 								<li><a href="#">Bantuan</a></li>
 								<li><a href="Profil.html" class="active">Profil</a></li>
 								<li><a href="#">Rapor</a></li>
@@ -39,13 +39,14 @@
 		</div>
 		<div class="konten">
 			<div class="foto">
-					<img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="avatar">
-					<h6>Photo</h6>
-					<input type="file" name="gambar" id="preview_gambar"/>
-					<img src="#" id="gambar_nodin" width="400" alt="Preview Gambar"/>
-				  </div></hr><br>
+				<img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" id="gambar_nodin" alt="avatar">
+				<h6>Photo</h6>
+			</div></hr><br>
 			<div class="form">
 				<form name="myForm" onsubmit="return validateForm()" action="">
+						<label for="foto">Foto</label><br>
+						<input type="file" name="gambar" id="preview_gambar"/>
+					<br><br>
 						<label for="name">Name</label>
 						<input type="text" id="name" name="name" placeholder="Name">
 					<br>
@@ -63,7 +64,7 @@
 			</div>
 		</div>
 	</div>
-	<hr size="2px">
+	<hr size="2px"><br>
 	<div class="footer">
 		<div class="tulisanKiri">
 			<a title="Team">Team</a>

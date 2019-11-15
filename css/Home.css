@@ -1,0 +1,127 @@
+img{
+    position: relative;
+    top: 0px;
+}
+
+.banner button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.berita button {
+    background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 40px;
+	border-radius: 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+	position: relative;
+	left: 78%;
+	margin-top: 10px;
+}
+
+.news{
+	padding: 20px;
+	background-color: white;
+	position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.news .konten{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 8px;
+    width: 320px;
+    padding: 8px 0px;
+    margin: 10px;
+}
+
+.news .konten .foto{
+	width: 320px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news .konten p{
+	padding: 0px 20px;
+    overflow: hidden;
+}
+
+.news .konten h2{
+	padding: 0px 20px;
+}
+
+.news .konten a{
+	background-color: black;
+	border: none;
+	color: white;
+	padding: 15px 40px;
+	border-radius: 7px;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+	position: relative;
+	left: 25%;
+	margin-top: 10px;
+}
+
+.modal-header h2{
+	text-align: center;
+	font-size: 25px;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+.form{
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+input[type=text], input[type=password], select, textarea {
+	padding:8px;
+	display:block;
+	/* border:none; */
+	border-bottom:1px solid #ccc;
+	width:100%
+}
+
+.simpan {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 22px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 4px 85%;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1006px){
+	input[type=text], input[type=password], select, textarea {
+		width: 400px;
+		height: 18%;
+		padding: 2px; 
+		border: 1px solid #ccc; 
+		border-radius: 4px;
+		box-sizing: border-box; 
+		margin-top: 6px;
+		margin-bottom: 16px;
+		resize: vertical 
+	}
+}

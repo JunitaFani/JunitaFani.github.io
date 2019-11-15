@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruang Belajar/Home</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/admin.css">
+	<link rel="stylesheet" type="text/css" href="css/Home.css">
 	<link rel="shortcut icon" type="image/x-icon" href="Pic/rb.jpg" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -22,7 +22,7 @@
 						<nav class="nav">
 							<a id="toggle" href="#"><i class="fa fa-bars"></i></a>
 							<ul id="dropdown">
-									<li><a href="Index.html">Logout</a></li>
+								<li><a href="Index.html">Logout</a></li>
 								<li><a href="#">Bantuan</a></li>
 								<li><a href="Profil.html" >Profil</a></li>
 								<li><a href="#">Rapor</a></li>
@@ -41,7 +41,34 @@
 		</div>
 		<div class="berita">
 			<h1 style="text-align: center;">Berita Pendidikan</h1>
-			<button onclick="window.location.href='#.html'">Tambah</button>
+			<button id="tambah">Tambah</button>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="close">&times;</span>
+						<h2>Tambah Berita</h2>
+					</div>
+					<form name="myForm" action="">
+						<div class="modal-body">
+							<div class="form">
+								<label for="foto">Foto:</label><br>
+								<input type="file" name="gambar"/>
+							</div>
+							<div class="form">
+								<label for="judul">Judul:</label>
+								<input type="text" id="judul" name="judul" placeholder="Masukkan Judul" required>
+							</div>
+							<div class="form">
+								<label for="deskripsi">Deskripsi:</label>
+								<textarea type="text" rows="3" id="deskripsi" name="deskripsi" placeholder="Masukkan Deskripsi" required></textarea>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<input type="submit" class="simpan" value="Simpan">
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>	
 		<div class="news">
 			<div class="konten">
@@ -50,7 +77,7 @@
 				<p>
 					Putra Indonesia ini telah memenangkan penghargaan The Best Theory dalam Olympiade matematika untuk tingkat Sekolah Dasar 3 tahun lalu...
 				</p>
-				<a href="#" class="readmore">Read More</a>
+				<a href="#" class="readmore">Detail</a>
 			</div>
 			<div class="konten">
 				<img src="Pic\2.jpg" class="foto"></img>
@@ -58,7 +85,7 @@
 				<p>
 					Putra Indonesia ini telah memenangkan penghargaan The Best Theory dalam Olympiade matematika untuk tingkat Sekolah Dasar 3 tahun lalu...
 				</p>
-				<a href="#" class="readmore">Read More</a>
+				<a href="#" class="readmore">Detail</a>
 			</div>
 			<div class="konten">
 				<img src="Pic\2.jpg" class="foto"></img>
@@ -66,7 +93,7 @@
 				<p>
 					Putra Indonesia ini telah memenangkan penghargaan The Best Theory dalam Olympiade matematika untuk tingkat Sekolah Dasar 3 tahun lalu...
 				</p>
-				<a href="#" class="readmore">Read More</a>
+				<a href="#" class="readmore">Detail</a>
 			</div>
 			<div class="konten">
 				<img src="Pic\2.jpg" class="foto"></img>
@@ -74,7 +101,7 @@
 				<p>
 					Putra Indonesia ini telah memenangkan penghargaan The Best Theory dalam Olympiade matematika untuk tingkat Sekolah Dasar 3 tahun lalu...
 				</p>
-				<a href="#" class="readmore">Read More</a>
+				<a href="#" class="readmore">Detail</a>
 			</div>
 			<div class="konten">
 				<img src="Pic\2.jpg" class="foto"></img>
@@ -82,7 +109,7 @@
 				<p>
 					Putra Indonesia ini telah memenangkan penghargaan The Best Theory dalam Olympiade matematika untuk tingkat Sekolah Dasar 3 tahun lalu...
 				</p>
-				<a href="#" class="readmore">Read More</a>
+				<a href="#" class="readmore">Detail</a>
 			</div>
 			<div class="konten">
 				<img src="Pic\2.jpg" class="foto"></img>
@@ -90,7 +117,7 @@
 				<p>
 					Putra Indonesia ini telah memenangkan penghargaan The Best Theory dalam Olympiade matematika untuk tingkat Sekolah Dasar 3 tahun lalu...
 				</p>
-				<a href="#" class="readmore">Read More</a>
+				<a href="#" class="readmore">Detail</a>
 			</div>
 		</div>
 	</div>
@@ -119,6 +146,7 @@
 		</div>
 	</div>
 	<script src="js/jquery.js"></script>
+	<script src="js/js.js"></script>
 	<script>
 		$(document).ready(function() {
 			$("#toggle").click(function() {

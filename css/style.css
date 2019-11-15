@@ -190,54 +190,6 @@ hr{
   	color: black;
 }
 
-
-.news{
-	padding: 20px;
-	background-color: white;
-	position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.news .konten{
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	border-radius: 8px;
-    width: 320px;
-    padding: 8px 0px;
-    margin: 10px;
-}
-
-.news .konten .foto{
-	width: 320px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.news .konten p{
-	padding: 0px 20px;
-    overflow: hidden;
-}
-
-.news .konten h2{
-	padding: 0px 20px;
-}
-
-.news .konten a{
-	background-color: black;
-	border: none;
-	color: white;
-	padding: 15px 40px;
-	border-radius: 7px;
-	text-align: center;
-	display: inline-block;
-	font-size: 14px;
-	position: relative;
-	left: 15%;
-	margin-top: 10px;
-}
-
 .readmore {
 	float: left;
 	/* margin: 30px 0 0 50px; */
@@ -311,6 +263,76 @@ hr{
 	border-bottom-right-radius: 5px;
 }
 
+/* modal */
+.modal {
+	display: none; 
+	position: fixed; 
+	z-index: 1; 
+	margin-left: 250px;
+	top: 0;
+	width: 60%; 
+	height: 100%; 
+	overflow: auto; 
+}
+
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+  /* Add Animation */
+@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color: #333;
+	color: white;
+}
+
+.modal-body {
+	padding: 2px 16px;
+}
+
+.modal-footer {
+	padding: 2px 16px;
+	background-color: #333;
+	color: white;
+}
+
+.close {
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* form */
+
+
 @media only screen and (max-width: 1367px){
 	.container{
 		width: 100%;
@@ -359,6 +381,17 @@ hr{
 
 	.login{
     	flex: 1;
+	}
+
+	.modal {
+		display: none; 
+		position: fixed; 
+		z-index: 1; 
+		margin-left: 180px;
+		top: 0;
+		width: 60%; 
+		height: 100%; 
+		overflow: auto; 
 	}
 }
 

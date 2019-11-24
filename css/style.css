@@ -272,7 +272,7 @@ hr{
 	top: 0;
 	width: 60%; 
 	height: 100%; 
-	overflow: auto; 
+	overflow: disabled; 
 }
 
 .modal-content {

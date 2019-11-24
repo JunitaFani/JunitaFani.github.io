@@ -42,7 +42,7 @@
 		<div class="berita">
 			<h1 style="text-align: center;">Berita Pendidikan</h1>
 			<button id="tambah">Tambah</button>
-			<div id="myModal" class="modal">
+			<div id="tambahBerita" class="modal">
 				<div class="modal-content">
 					<div class="modal-header">
 						<span class="close">&times;</span>
@@ -71,13 +71,40 @@
 			</div>
 		</div>	
 		<div class="news">
+			<div id="detailBerita" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="close1">&times;</span>
+						<h2>Detail Berita</h2>
+					</div>
+					<form name="myForm" action="">
+						<div class="modal-body">
+							<div class="form">
+								<label for="foto">Foto:</label><br>
+								<input type="file" name="gambar"/>
+							</div>
+							<div class="form">
+								<label for="judul">Judul:</label>
+								<input type="text" id="judul" name="judul" placeholder="Masukkan Judul" required>
+							</div>
+							<div class="form">
+								<label for="deskripsi">Deskripsi:</label>
+								<textarea type="text" rows="3" id="deskripsi" name="deskripsi" placeholder="Masukkan Deskripsi" required></textarea>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<input type="submit" class="simpan" value="Simpan">
+						</div>
+					</form>
+				</div>
+			</div>
 			<div class="konten">
 				<img src="Pic\2.jpg" class="foto"></img>
 				<h2>Juara Olimpiade Matematika</h2>
 				<p>
 					Putra Indonesia ini telah memenangkan penghargaan The Best Theory dalam Olympiade matematika untuk tingkat Sekolah Dasar 3 tahun lalu...
 				</p>
-				<a href="#" class="readmore">Detail</a>
+				<a id="detail" class="readmore">Detail</a>
 			</div>
 			<div class="konten">
 				<img src="Pic\2.jpg" class="foto"></img>

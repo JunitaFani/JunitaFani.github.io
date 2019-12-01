@@ -263,8 +263,8 @@ hr{
 	border-bottom-right-radius: 5px;
 }
 
-/* modal */
-.modal {
+/* popup */
+.popup {
 	display: none; 
 	position: fixed; 
 	z-index: 1; 
@@ -276,7 +276,7 @@ hr{
 	overflow: disabled; 
 }
 
-.modal-content {
+.isiPopup {
 	position: relative;
 	background-color: #fefefe;
 	margin: auto;
@@ -301,17 +301,17 @@ hr{
 	to {top:0; opacity:1}
 }
 
-.modal-header {
+.popup-header {
 	padding: 2px 16px;
 	background-color: #333;
 	color: white;
 }
 
-.modal-body {
+.popup-body {
 	padding: 2px 16px;
 }
 
-.modal-footer {
+.popup-footer {
 	padding: 2px 16px;
 	background-color: #333;
 	color: white;

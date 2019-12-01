@@ -24,21 +24,13 @@
 				</form>
 			</div>
 		</div>
+		<div id="popup-peringatan">
+			<span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Peringatan!</strong><br> 
+			Username atau Password Salah
+		</div>
 	</div>
-	<script>
-		function validateForm() {
-			var username = document.forms["myForm"]["username"].value;
-			var password = document.forms["myForm"]["password"].value;
-
-			if (username == "") {
-				alert("Username harus diisi");
-				return false;
-			} if (password == "") {
-				alert("Password harus diisi");
-				return false;
-			}
-		}
-	</script>
 </body>
-
+<script src="js/jquery.js"></script>
+<script src="js/js.js"></script>
 </html>

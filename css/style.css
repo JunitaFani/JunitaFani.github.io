@@ -1,4 +1,8 @@
-body {
+html, body{
+	height: 100%;
+}
+
+/* body {
 	margin: 0;
 	padding: 0;
 	background-color: white;
@@ -6,16 +10,31 @@ body {
 	font-size:20px;
 	padding-bottom:10px;
 	height: 100%;
+} */
+
+body{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
 }
 
 * {
 	box-sizing: border-box;
 }
 
-.header{
+.container .header{
 	position: relative;
 	text-align: center;
 	background: rgba(75, 71, 71, 0.1);
+	font-family: Arial;
+	border-bottom: 2px solid rgba(0,0,0,0.7);
+}
+
+.header{
+	position: relative;
+	text-align: center;
+	/* background: rgba(75, 71, 71, 0.1); */
 	font-family: Arial;
 	border-bottom: 2px solid rgba(0,0,0,0.7);
 }	
@@ -25,6 +44,7 @@ body {
 	width: 1367px;
 	min-height:100%;
 	position:relative; 
+	
 }
 
 .navbar{
@@ -36,10 +56,50 @@ body {
 	display: flex;
 }
 
-.logo {
-	float:left;
-	width:12%; /* The width is 20%, by default */
-	flex: 3;      
+/* dropdown */
+.dropbtn {
+	display: inline-block;
+	color: #818181;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  
+  li.dropdown1 {
+	display: inline-block;
+  }
+  
+  .dropdown1-content {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 160px;
+	z-index: 1;
+  }
+  
+  .dropdown1-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  .dropdown1-content {background-color: #333;}
+  
+  .dropdown1:hover .dropdown1-content {
+	display: block;
+	color: #f1f1f1;
+  }
+
+.container .logo{
+		float:left;
+		width:12%; /* The width is 20%, by default */
+		flex: 3;      
+}
+
+.logo {    
+	align-items: flex-start;
 }
 
 .logo a{
@@ -53,16 +113,28 @@ body {
 	font-weight: bold;
 }
 
-.logo a img{
+.container .logo a img{
 	height:90px;
 	width:118px;
 }
 
-.main {
+.container .main {
 	padding-top: 20px;
 	width: 75%; /* The width is 60%, by default */
 	background-color: #333;
 }
+
+.logo a img{
+	height:90px;
+	width:118px;
+	margin-left: -200px;
+}
+
+/* .main {
+	padding-top: 20px;
+	width: 75%;
+	background-color: #333;
+} */
 
 .nav{
 	flex: 3
@@ -126,8 +198,6 @@ body {
     
 /* bawah */
 .footer {
-	width: 100%;
-	height: 50px;
 	padding-left: 10px;
 	padding-right: 20px;
 	line-height: 50px;
@@ -136,8 +206,9 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	position: fixed;
 	bottom: 0px;
+	position: relative;
+
 }
 
 .footer .tulisanKiri{
@@ -214,13 +285,25 @@ hr{
 	text-align: center;
 }
 
-.Row
-{
+.Row {
 	display: table;
     width: 100%; /*Optional*/
     table-layout: fixed; /*Optional*/
 	border-spacing: 40px; /*Optional*/
-	
+}
+
+.berita {
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 50px;
+
+}
+.berita button {
+	margin-left: 200px;
+}
+
+.berita img {
+	margin-left: 267px;
 }
 
 .center{
@@ -273,6 +356,17 @@ hr{
 	width: 60%; 
 	height: 100%; 
 	overflow: auto; 
+}
+
+.modal1 {
+	display: none; 
+	position: absolute; 
+	z-index: 1;
+	margin: auto;
+	top: 15%;
+	left: 25%;
+	width: 60%; 
+	height: 100%;
 }
 
 .modal-content {
@@ -382,17 +476,6 @@ hr{
 	.login{
     	flex: 1;
 	}
-
-	.modal {
-		display: none; 
-		position: fixed; 
-		z-index: 1; 
-		margin-left: 180px;
-		top: 0;
-		width: 60%; 
-		height: 100%; 
-		overflow: auto; 
-	}
 }
 
 @media only screen and (max-width: 990px){
@@ -400,13 +483,6 @@ hr{
 		height: 5%;
 		width: 100%;
 	}
-}
-
-@media only screen and (max-width: 494px){
-	.logo a img{
-        height:80px;
-        width:80px;
-    }
 }
 
 @media only screen and (max-width: 348px){

@@ -1,0 +1,52 @@
+.video1{
+    padding: 14px 16px;
+    width: auto;
+    margin: 25px 20px 20px 20px;
+    color: black;
+    float: left;
+  }
+
+  .sidenav button {
+    background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 5px 15px;
+	border-radius: 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+	position: relative;
+	left: 10%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+  /* The sidebar menu */
+.sidenav {
+    margin-top: 35px;
+    height: 100%; 
+    width: 30%; /* Set the width of the sidebar */
+    position: absolute; 
+    overflow: auto;
+    top: 20; /* Stay at the top */
+    right: 35px;
+    /*background-color: #111; /* Black */*/
+    /*overflow-x: hidden;  Disable horizontal scroll */
+    padding-top: 20px; 
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    /*display: block;*/
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: grey;
+  }
+

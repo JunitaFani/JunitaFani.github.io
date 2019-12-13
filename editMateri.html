@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruang Belajar/Materi</title>
+  <link rel="stylesheet" type="text/css" href="css/Materi.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="Pic/rb.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section id="main-content1">
+    <div class="con-det-materi">
+      <div class="video1">
+        <div class="h2">
+          <h2>Edit Materi</h2>
+        </div>
+        <div class="form">
+          <form name="myForm" onsubmit="return validateForm()" action="">
+            <label for="video">Video</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file" name="video" id="preview_video"/>
+            <br><br>
+            <label for="name">Judul Materi</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="name" name="name" placeholder="Name">
+            <br>
+            <label for="nis">Penjelasan</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="nis" name="nis" placeholder="NIS">
+            <br>
+            <label for="video">Latihan</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file" name="latihan"/>
+            <br><br>
+            <label for="video">Pembahasan</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file" name="pembahasan" />
+            <br><br>
+            <input type="submit" value="Save">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

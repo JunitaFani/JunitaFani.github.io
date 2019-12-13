@@ -3,6 +3,245 @@
 	color: rgb(4, 4, 15);
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.tombol :hover {
+	background-color: #45a049;
+}
+
+.tombol a {
+	background-color: #4CAF50;
+	color: white;
+	padding: 7px 7px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=text], input[type=password], select, textarea {
+	width: 500px;
+	height: 18%;
+	padding: 2px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 290px;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+a[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 7px 7px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+a[type=submit]:hover {
+	background-color: #45a049;
+}
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+	height: 100%;
+	width: 75%;
+	grid-area: sidebar;
+	background-color: black;
+	padding-top: 10px;
+  } 
+  
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+	padding: 6px 8px 6px;
+	text-decoration: none;
+	font-size: 16px;
+	color: #818181;
+	display: block;
+	border: none;
+	background: none;
+	width: 90%;
+	text-align: left;
+	cursor: pointer;
+	outline: none;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+	color: #f1f1f1;
+  }
+  
+  /* Add an active class to the active dropdown button */
+  .activee {
+	color: #818181;
+	border-bottom: 5px solid white;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+	display: none;
+	background-color: #262626;
+	padding-left: 55px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+	float: right;
+	padding-right: 8px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-width: 734px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+/* Container Materi */
+.container-materi{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto 100vh;
+	grid-template-areas: 
+	"header header header header"
+	"sidebar main main main";
+	position:relative; 
+}
+
+.container-materi .header{
+	grid-area: header;
+}
+
+.container-materi .main {
+	padding-top: 20px;
+	width: 75%; /* The width is 60%, by default */
+	background-color: #333;
+}
+
+.container-materi .logo{
+	float:left;
+	width:12%; /* The width is 20%, by default */
+	flex: 3;      
+}
+
+.container-materi .logo a img{
+	height:90px;
+	width:118px;
+}
+
+.container-materi .nav a#toggle{
+	float: right;
+	padding: 14px 16px;
+	display: none;
+}
+
+  /* detail materi */
+  .content-materi{
+	display: grid;
+	grid-template-columns: 480px auto;
+  }
+
+  .detail-materi{
+	height: 100%;
+	width: 950px;
+	margin-left: -110px;
+	margin-top: -30px;
+  }
+  
+  .con-det-materi{
+	width: 90%;
+  }
+
+  .video1{
+    padding: 14px 16px;
+    width: auto;
+    margin: 15px 10px 10px 10px;
+    color: black;
+    float: left;
+  }
+
+  .tombol{
+    padding: 14px 16px;
+    width: auto;
+	color: black;
+	margin-left: 850px;
+	margin-top: 10px;
+  }
+  
+.h2 {
+	font-size: 30px;
+	text-align: center;
+	margin-left: 75px;
+}
+
+.h2 input[input[type=submit]]
+
+/* responsive */
+@media only screen and (max-width: 1367px){
+	.container-materi .nav ul{
+		display: block;
+	}
+	.container-materi{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 986px){
+
+	.container-materi .navbar{
+    	display: block;
+	}
+	
+	.container-materi .nav{
+    	flex: 1;
+	}
+
+	.container-materi .nav a#toggle{
+		display: block;
+		text-decoration: none;
+		background: #333;
+		color: #fff;
+		font-weight: bold;
+		padding-top: 2px;
+		padding-bottom: 18px;
+	}
+
+	.container-materi .nav ul{
+		display: none;
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	.container-materi .nav ul li{
+    	display: block;
+	}
+
+	.container-materi .nav ul li a{
+		display: block;
+		padding: 7px 20px;
+		margin: 0;
+	}
+}
+
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -22,7 +261,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+	align-items: center;
+	margin-top: -480px;
 }
 
 .materi .content{
@@ -46,52 +286,3 @@
 	text-align: center;
 }
 
-.konten{
-	position: relative;
-    float: left;
-    padding: 93px 3px;
-	padding-bottom: 10%;
-}
-
-.konten .sidebar{
-	display: flex;
-}
-
-.konten .sidebar ul{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.konten .sidebar li {
-	padding: 8px;
-	margin-bottom: 7px;
-	background-color: #33b5e5;
-	color: #ffffff;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
-}
-
-.konten .sidebar li:hover {
-	background-color: #0099cc;
-}
-
-.konten .tulisan{
-	display: flex;
-	flex-direction: column;
-	padding-left: 5%;
-}
-
-
-@media only screen and (max-width: 734px){
-	.konten .sidebar{
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-
-	}
-
-	.konten .tulisan{
-		float: right;
-		padding-left: 5%;
-	}
-}

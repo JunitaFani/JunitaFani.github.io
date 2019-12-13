@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ruang Belajar/Home</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/Home.css">
+	<link rel="shortcut icon" type="image/x-icon" href="Pic/rb.jpg" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="navbar">
+				<div class="menu">
+					<div class="logo">
+						<a href="">
+							<img src="Pic\rb.jpg">
+						</a>
+					</div>
+					<div class="main">
+						<nav class="nav">
+							<a id="toggle" href="#"><i class="fa fa-bars"></i></a>
+							<ul id="dropdown2">
+								<li><a href="index.html">Logout</a></li>
+								<li><a href="bantuan.html">Bantuan</a></li>
+								<li><a href="Profil.html" >Profil</a></li>
+								<li><a href="utbk.html" >UTBK</a></li>
+								<li class="dropdown1">
+									<a href="javascript:void(0)" class="dropbtn">Materi</a>
+									<div class="dropdown1-content">
+										<a href="kelas10.html">Kelas 10</a>
+										<a href="#">Kelas 11</a>
+										<a href="#">Kelas 12</a>
+									</div>
+								</li>
+								<li><a href="Home.html">Home</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="berita">
+		<button id="tambah">Ubah</button>
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>Ubah Berita</h2>
+				</div>
+				<form name="myForm" action="">
+					<div class="modal-body">
+						<div class="form">
+							<label for="foto">Foto:</label><br>
+							<input type="file" name="gambar"/>
+						</div>
+						<div class="form">
+							<label for="judul">Judul:</label>
+							<input type="text" id="judul" name="judul" placeholder="Masukkan Judul" required>
+						</div>
+						<div class="form">
+							<label for="deskripsi">Deskripsi:</label>
+							<textarea type="text" rows="3" id="deskripsi" name="deskripsi" placeholder="Masukkan Deskripsi" required></textarea>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<input type="submit" class="simpan" value="Simpan">
+					</div>
+				</form>
+			</div>
+		</div>
+		<h2 style="text-align: center;">Prestasi Tingkat Nasional SMA Negeri 2 Cirebon</h2>
+		<img src="Pic\2.jpeg" class="foto"></img>
+		<p>
+			Siswa dan Siswi SMA Negeri 2 Kota Cirebon kembali mendulang prestasi gemilang, salah satunya adalah Juara 1 Tingkat Nasional LCT Biologi di Universitas Indonesia selain itu berikut kejuaraan lainnya yang berhasil diraih selama bulan oktober dan november :
+			<br>
+			1. Juara 1 tingkat Nasional LCT Biologi Universitas Indonesia atas nama At-Thuur Maulana Rafatha, Triana Amelia  dan Angelina
+			<br>
+			2. Juara 1 Tingkat Jawa Barat LCT Matematika Unsil Tasikmalaya atas nama Adithya Rimba, Saiful Anwar dan M. Rayhan
+			<br>
+			3. Juara 1 Tingkat Jawa Barat Menulis Aksara Cirebon atas nama Ari Sucipto dan Juara 2 Tingkat Jawa Barat Tembang Cirebon atas nama Fahmi Maulana dalam acara Pasanggiri Basa Cerbon Dermayu
+			<br>
+			4. Juara 1 tingkat Jawa Barat Lomba Debat Bahasa Inggris di Universitas Kuningan atas nama , News Reading atas nama Rachel Sinaga dan Juara 1 Best Speaker atas nama Agnes Leonita
+			<br>
+			5. Juara 1 tingkat Ciayumajakuning LCT GPN atas nama Syifa Awalludin   
+		</p>
+	</div>
+</div>
+</div>
+<hr size="2px" >
+<div class="footer">
+	<div class="tulisanKiri">
+		<a title="Team">Team</a>
+		<a title="Contact">Contact</a>
+	</div>
+	<div class="tulisanKanan">
+		<img src="Pic\tw.png">
+		<img src="Pic\fb.png">
+		<img src="Pic\ig.png">
+	</div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/js.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#toggle").click(function() {
+			$("#dropdown").slideToggle("fast");
+		});
+	});
+</script>
+</body>
+</html>

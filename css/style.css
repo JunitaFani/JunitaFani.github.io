@@ -346,30 +346,20 @@ hr{
 	border-bottom-right-radius: 5px;
 }
 
-/* modal */
-.modal {
+/* popup */
+.popup {
 	display: none; 
 	position: fixed; 
 	z-index: 1; 
 	margin-left: 250px;
+	left:0;
 	top: 0;
 	width: 60%; 
 	height: 100%; 
-	overflow: auto; 
+	overflow: disabled; 
 }
 
-.modal1 {
-	display: none; 
-	position: absolute; 
-	z-index: 1;
-	margin: auto;
-	top: 15%;
-	left: 25%;
-	width: 60%; 
-	height: 100%;
-}
-
-.modal-content {
+.isiPopup {
 	position: relative;
 	background-color: #fefefe;
 	margin: auto;
@@ -383,34 +373,35 @@ hr{
 	animation-duration: 0.4s
 }
 
+.popup-header {
+	padding: 2px 16px;
+	background-color: #333;
+	color: white;
+}
+
+.popup-body {
+	padding: 2px 16px;
+}
+
+.popup-footer {
+	padding: 2px 16px;
+	background-color: #333;
+	color: white;
+}
+
   /* Add Animation */
 @-webkit-keyframes animatetop {
 	from {top:-300px; opacity:0} 
 	to {top:0; opacity:1}
 }
-  
+
 @keyframes animatetop {
 	from {top:-300px; opacity:0}
 	to {top:0; opacity:1}
 }
 
-.modal-header {
-	padding: 2px 16px;
-	background-color: #333;
-	color: white;
-}
-
-.modal-body {
-	padding: 2px 16px;
-}
-
-.modal-footer {
-	padding: 2px 16px;
-	background-color: #333;
-	color: white;
-}
-
-.close {
+.close,
+.close1 {
 	color: white;
 	float: right;
 	font-size: 28px;
@@ -418,15 +409,15 @@ hr{
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.close1:hover,
+.close1:focus{
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 /* form */
-
-
 @media only screen and (max-width: 1367px){
 	.container{
 		width: 100%;
@@ -476,6 +467,7 @@ hr{
 	.login{
     	flex: 1;
 	}
+	
 }
 
 @media only screen and (max-width: 990px){
@@ -483,6 +475,7 @@ hr{
 		height: 5%;
 		width: 100%;
 	}
+	
 }
 
 @media only screen and (max-width: 348px){
@@ -496,4 +489,33 @@ hr{
         font-size: 15px;
     }
 }
+
+@media only screen and (max-width: 1006px){
+	.popup {
+		display: none; 
+		position: fixed; 
+		z-index: 1; 
+		margin-left: 200px;
+		left:0;
+		top: 0;
+		width: 60%; 
+		height: 100%; 
+		overflow: disabled; 
+	}
+}
+
+@media only screen and (max-width:716px){
+	.popup {
+		display: none; 
+		position: fixed; 
+		z-index: 1; 
+		margin-left: 150px;
+		left:0;
+		top: 0;
+		width: 60%; 
+		height: 100%; 
+		overflow: disabled; 
+	}
+}
+
 

@@ -26,7 +26,7 @@ img{
 	display: inline-block;
 	font-size: 14px;
 	position: relative;
-	left: 78%;
+	left: 65%;
 	margin-top: 10px;
 }
 
@@ -77,11 +77,6 @@ img{
 	margin-top: 10px;
 }
 
-.modal-header h2{
-	text-align: center;
-	font-size: 25px;
-}
-
 button:hover {
 	background-color: #45a049;
 }
@@ -123,5 +118,78 @@ input[type=text], input[type=password], select, textarea {
 		margin-top: 6px;
 		margin-bottom: 16px;
 		resize: vertical 
+	}
+
+	.simpan {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 15px 22px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 15px;
+		margin: 4px 80%;
+		cursor: pointer;
+	}
+	
+}
+
+@media only screen and (max-width:1056px){
+	.berita button {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 15px 40px;
+		border-radius: 5px;
+		text-align: center;
+		display: inline-block;
+		font-size: 14px;
+		position: relative;
+		left: 50%;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width:716px){
+	@media only screen and (max-width:1056px){
+		.berita button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 15px 40px;
+			border-radius: 5px;
+			text-align: center;
+			display: inline-block;
+			font-size: 14px;
+			position: relative;
+			left: 8%;
+			margin-top: 10px;
+		}
+
+		input[type=text], input[type=password], select, textarea {
+			width: 300px;
+			height: 18%;
+			padding: 2px; 
+			border: 1px solid #ccc; 
+			border-radius: 4px;
+			box-sizing: border-box; 
+			margin-top: 6px;
+			margin-bottom: 16px;
+			resize: vertical 
+		}
+
+		.simpan {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 15px 22px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 15px;
+			margin: 4px 70%;
+			cursor: pointer;
+		}
 	}
 }

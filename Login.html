@@ -14,8 +14,8 @@
 		</div>
 		<div class="konten">
 			<div class="form">
-				<form name="myForm" onsubmit="return validateForm()" action="Home.html	">
-					<input type="text" id="username" name="username" required pattern="[A-Za-z]+" placeholder="Username">
+				<form name="myForm" onsubmit="return validateForm()" action="Home.html">
+					<input type="text" id="username" name="username"  pattern="[A-Za-z]+" placeholder="Username">
 					<br>
 					<input type="password" id="password" name="pasword" placeholder="Password">
 					<br>
@@ -24,21 +24,13 @@
 				</form>
 			</div>
 		</div>
+		<div id="popup-peringatan">
+			<span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Peringatan!</strong><br> 
+			Username atau Password Salah
+		</div>
 	</div>
-	<script>
-		function validateForm() {
-			var username = document.forms["myForm"]["username"].value;
-			var password = document.forms["myForm"]["password"].value;
-
-			if (username == "") {
-				alert("Username harus diisi");
-				return false;
-			} if (password == "") {
-				alert("Password harus diisi");
-				return false;
-			}
-		}
-	</script>
 </body>
-
+<script src="js/jquery.js"></script>
+<script src="js/js.js"></script>
 </html>

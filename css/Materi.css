@@ -64,7 +64,7 @@ a[type=submit]:hover {
 /* Fixed sidenav, full height */
 .sidenav {
 	height: 100%;
-	width: 75%;
+	width: 60%;
 	grid-area: sidebar;
 	background-color: black;
 	padding-top: 10px;
@@ -161,8 +161,8 @@ a[type=submit]:hover {
 
   .detail-materi{
 	height: 100%;
-	width: 950px;
-	margin-left: -110px;
+	width: 850px;
+	margin-left: -150px;
 	margin-top: -30px;
   }
   
@@ -171,7 +171,7 @@ a[type=submit]:hover {
   }
 
   .video1{
-    padding: 14px 16px;
+    padding: 5px 6px;
     width: auto;
     margin: 15px 10px 10px 10px;
     color: black;
@@ -262,7 +262,8 @@ a[type=submit]:hover {
     flex-wrap: wrap;
     justify-content: center;
 	align-items: center;
-	margin-top: -480px;
+	margin-top: 10%;
+	margin-bottom: -10%;
 }
 
 .materi .content{

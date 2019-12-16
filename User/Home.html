@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ruang Belajar/Home</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/Home.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../Pic/rb.jpg" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="navbar">
+				<div class="menu">
+					<div class="logo">
+						<a href="">
+							<img src="../Pic\rb.jpg">
+						</a>
+					</div>
+					<div class="main">
+						<nav class="nav">
+							<a id="toggle" href="#"><i class="fa fa-bars"></i></a>
+							<ul id="dropdown2">
+								<li><a href="index.html">Logout</a></li>
+								<li><a href="bantuan.html">Bantuan</a></li>
+								<li><a href="Profil.html" >Profil</a></li>
+								<li><a href="utbk.html" >UTBK</a></li>
+								<li class="dropdown1">
+									<a href="javascript:void(0)" class="dropbtn">Materi</a>
+									<div class="dropdown1-content">
+										<a href="kelas10.html">Kelas 10</a>
+										<a href="#">Kelas 11</a>
+										<a href="#">Kelas 12</a>
+									</div>
+								</li>
+								<li><a href="Home.html" class="active">Home</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<img src="../Pic\newrb.jpg">
+		</div>
+		<div class="berita">
+			<h1 style="text-align: center;">Berita Pendidikan</h1>
+		</div>	
+		<div class="news">
+			<div class="konten">
+				<img src="../Pic\2.jpeg" class="foto"></img>
+				<h2>Prestasi Tingkat Nasional SMA Negeri 2 Cirebon</h2>
+				<p>
+					Siswa dan Siswi SMA Negeri 2 Kota Cirebon kembali mendulang prestasi gemilang, salah satunya adalah Juara 1 Tingkat Nasional LCT...	
+				</p>
+				<a href="beritaDetail1.html" class="readmore">Detail</a>
+			</div>
+			<div class="konten">
+				<img src="../Pic\3.jpg" class="foto"></img>
+				<h2>SMAN 1 Ponorogo Panen Prestasi Tingkat Nasional</h2>
+				<p>
+					Siswa-siswi SMAN 1 Ponorogo terus menorehkan prestasi membanggakan di tingkat kabupaten, nasional bahkan internasional. Nama sekolah... 
+				</p>
+				<a href="#" class="readmore">Detail</a>
+			</div>
+			<div class="konten">
+				<img src="../Pic\1.jpg" class="foto"></img>
+				<h2>Pelajar SMPN 1 Gresik Raih Sains Biologi</h2>
+				<p>
+					Tim yang terdiri dari Jihan Farahiya Sambari (14), M.Zulqi Prishandi Wijaya (13) dan M. Rafif Fasya Rizkyaldi (14), ketiganya...	
+				</p>
+				<a href="#" class="readmore">Detail</a>
+			</div>
+			<div class="konten">
+				<img src="../Pic\2.jpeg" class="foto"></img>
+				<h2>Prestasi Tingkat Nasional SMA Negeri 2 Cirebon</h2>
+				<p>
+					Siswa dan Siswi SMA Negeri 2 Kota Cirebon kembali mendulang prestasi gemilang, salah satunya adalah Juara 1 Tingkat Nasional LCT...	
+				</p>
+				<a href="#" class="readmore">Detail</a>
+			</div>
+			<div class="konten">
+				<img src="../Pic\3.jpg" class="foto"></img>
+				<h2>SMAN 1 Ponorogo Panen Prestasi Tingkat Nasional</h2>
+				<p>
+					Siswa-siswi SMAN 1 Ponorogo terus menorehkan prestasi membanggakan di tingkat kabupaten, nasional bahkan internasional. Nama sekolah... 
+				</p>
+				<a href="#" class="readmore">Detail</a>
+			</div>
+			<div class="konten">
+				<img src="../Pic\1.jpg" class="foto"></img>
+				<h2>Pelajar SMPN 1 Gresik Raih Sains Biologi</h2>
+				<p>
+					Tim yang terdiri dari Jihan Farahiya Sambari (14), M.Zulqi Prishandi Wijaya (13) dan M. Rafif Fasya Rizkyaldi (14), ketiganya...	
+				</p>
+				<a href="#" class="readmore">Detail</a>
+			</div>
+		</div>
+		<div class="center">
+			<div class="pagination">
+				<button class="active" id="showmore">Show more...</button>
+				<button class="active" id="hidden" style="display:none">Hidden</button>
+			</div> 
+		</div>
+		<div class="footer">
+			<div class="tulisanKiri">
+				<a title="Team">Team</a>
+				<a title="Contact">Contact</a>
+			</div>
+			<div class="tulisanKanan">
+				<img src="../Pic\tw.png">
+				<img src="../Pic\fb.png">
+				<img src="../Pic\ig.png">
+			</div>
+		</div>
+	</div>	
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/js.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#toggle").click(function() {
+			$("#dropdown").slideToggle("fast");
+		});
+	});
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$('#showmore').click(function(){
+		load();
+		$('#hidden').css("display", "block");
+		$(this).css("display", "none");
+	})
+	$('#hidden').click(function(){
+		remove();
+		$('#showmore').css("display", "block");
+		$(this).css("display", "none");
+		
+	})
+
+	function load() {
+		$.ajax({
+			type: 'GET', 
+			url: 'https://raw.githubusercontent.com/JunitaFani/JunitaFani.github.io/master/data.json',
+			data: { get_param: 'value' }, 
+			dataType: 'json',
+			success: function(data) {
+				$.each(data, function(index, elemen){
+					console.log('name '+elemen['judul'])
+					$('.news').append('<div class="konten" id="data"><img src="../Pic/2.jpeg" class="foto"></img><h2>'+elemen['judul']+'</h2><p>'+elemen['konten']+'</p><a href="beritaDetail1.html" class="readmore">Detail</a></div>')
+				});
+			}
+		});
+	}
+
+	function remove() {
+		var hapus = document.querySelectorAll("#data");
+		$(hapus).remove();
+	}
+</script>
+</html>

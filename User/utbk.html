@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruang Belajar/Materi</title>
+  <link rel="stylesheet" type="text/css" href="../css/Materi.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../Pic/rb.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container-materi">
+    <div class="header">
+      <div class="navbar">
+        <div class="menu">
+          <div class="logo">
+            <a href="">
+              <img src="../Pic\rb.jpg">
+            </a>
+          </div>
+          <div class="main">
+            <nav class="nav">
+              <a id="toggle" href="#"><i class="fa fa-bars"></i></a>
+              <ul id="dropdown2">
+                <li><a href="index.html">Logout</a></li>
+                <li><a href="bantuan.html">Bantuan</a></li>
+                <li><a href="Profil.html" >Profil</a></li>
+                <li><a href="utbk.html" class="active">UTBK</a></li>
+                <li class="dropdown1">
+                  <a href="javascript:void(0)" class="dropbtn">Materi</a>
+                  <div class="dropdown1-content">
+                    <a href="kelas10.html">Kelas 10</a>
+                    <a href="#">Kelas 11</a>
+                    <a href="#">Kelas 12</a>
+                  </div>
+                </li>
+                <li><a href="Home.html">Home</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-materi">
+      <div id="page-wrap">
+        <div class="sidenav">
+          <div class="group" id="nav1">
+            <button class="dropdown-btn">TPA<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+              <a href="../detailPangkat.html">Latihan dan Pembahasan</a>
+              <a href="../detailEksponen">Tips dan trik</a>
+            </div>
+            <button class="dropdown-btn">Soshum<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+              <a href="../detailPangkat">Latihan dan Pembahasan</a>
+              <a href="../detailEksponen">Tips dan trik</a>
+            </div>
+            <button class="dropdown-btn">Saintek<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+              <a href="../detailPangkat">Latihan dan Pembahasan</a>
+              <a href="../detailEksponen">Tips dan trik</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="detail-materi">
+        <section id="main-content">
+          <div class="con-det-materi">
+            <div class="video1">
+              <div class="h2">
+                <h2>Pangkat</h2>
+                <iframe width="800" height="500" src="https://www.youtube.com/embed/PARrxAE1Zf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <br>
+              <p>
+                A.	PANGKAT BULAT POSITIF <br>
+                Jika a   R dan n > 1, n   A maka <br>
+                an = a.a.a.a.a.a.a.....a <br>
+                sebanyak n kali <br>
+                a disebut bilangan pokok <br>
+                n disebut pangkat / eksponen <br><br>
+                Sifat-sifat eksponen bulat positif <br>
+                Jika a dan b bilangan real, m dan n bilangan bulat positif <br>
+                1.	am. an = am + n <br>
+                2.	am: an = am - n <br>
+                3.	(am) n = amn <br>
+                4.	(a.b)m = am .bm <br>
+                <br><br>
+                Contoh : <br>
+                Sederhanakan :<br>
+                1.	a3.a5 = a3 + 5 = a8 <br>
+                2.	a7 : a2 = a7 – 2 = a5 <br>
+                <br><br><br>
+                B.  PANGKAT BULAT NEGATIF DAN RASIONAL <br>
+                Bilangan rasional yaitu bilangan yang dapat dinyatakan dengan a/b. 
+                a pangkat n/m merupakan bilangan dengan pangkat tak sebenarnya.
+              </p>
+              <br>
+              <h3>
+                Latihan Soal 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <a href="../Pic/Pangkat.pdf">download disini</a>
+                <br>
+                Pembahasan soal 1 : <a href="../Pic/Pangkat.pdf">download disini</a>
+              </h3>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/js.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#toggle").click(function() {
+        $("#dropdown2").slideToggle("fast");
+      });
+    });
+  </script>
+  <script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("activee");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <script src="js/jquery-1.12.0.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

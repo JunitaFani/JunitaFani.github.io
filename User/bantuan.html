@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruang Belajar/Materi</title>
+  <link rel="stylesheet" type="text/css" href="../css/Materi.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../Pic/rb.jpg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="navbar">
+        <div class="menu">
+          <div class="logo">
+            <a href="">
+              <img src="../Pic\rb.jpg">
+            </a>
+          </div>
+          <div class="main">
+            <nav class="nav">
+              <a id="toggle" href="#"><i class="fa fa-bars"></i></a>
+              <ul id="dropdown2">
+                <li><a href="../index.html">Logout</a></li>
+                <li><a href="bantuan.html" class="active">Bantuan</a></li>
+                <li><a href="Profil.html" >Profil</a></li>
+                <li><a href="utbk.html" >UTBK</a></li>
+                <li class="dropdown1">
+                  <a href="javascript:void(0)" class="dropbtn">Materi</a>
+                  <div class="dropdown1-content">
+                    <a href="kelas10.html">Kelas 10</a>
+                    <a href="#">Kelas 11</a>
+                    <a href="#">Kelas 12</a>
+                  </div>
+                </li>
+                <li><a href="Home.html">Home</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+		<div class="bantuan">
+			<h1>
+				Kelompok 12
+			</h1>
+			<h2>
+				1. Nengah Adinda Prastari Putri (162410101057)
+				<br>
+				2. Junita Fani Gita Rahmasari (162410101089)
+			</h2>
+			<br>
+			<br>
+			<h3>
+				Website RuangBelajar merupakan sarana pembantu dalam belajar yang ditujukan untuk siswa SD. Siswa dapat melatih kemampuan akademik dan dapat melihat hasil capaiannya dalam belajar.
+				<br>
+				Diakses gratis dengan layanan yang berkualitas.
+				<br>
+				:)
+			</h3>
+    </div>
+    <footer class="footer">
+      <div class="tulisanKiri">
+        <a title="Team">Team</a>
+        <a title="Contact">Contact</a>
+      </div>
+      <div class="tulisanKanan">
+        <img src="../Pic\tw.png">
+        <img src="../Pic\fb.png">
+        <img src="../Pic\ig.jpg">
+      </div>
+    </footer>
+  </div>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/js.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#toggle").click(function() {
+      $("#dropdown2").slideToggle("fast");
+    });
+  });
+</script>
+</body>
+</html>

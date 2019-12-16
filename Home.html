@@ -47,8 +47,8 @@
 		</div>
 		<div class="berita">
 			<h1 style="text-align: center;">Berita Pendidikan</h1>
-			<button id="tambah">Tambah</button>
-			<div id="tambahBerita" class="popup">
+			<button id="modal">Tambah</button>
+			<div id="myModal" class="popup">
 				<div class="isiPopup">
 					<div class="popup-header">
 						<span class="close">&times;</span>
@@ -128,14 +128,8 @@
 		</div>
 		<div class="center">
 			<div class="pagination">
-				<a href="#">&laquo;</a>
-				<a class="active" href="Home.html">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#">4</a>
-				<a href="#">5</a>
-				<a href="#">6</a>
-				<a href="#">&raquo;</a>
+				<button class="active" id="showmore">Show more...</button>
+				<button class="active" id="hidden" style="display:none">Hidden</button>
 			</div> 
 		</div>
 		<div class="footer">
@@ -159,5 +153,39 @@
 			$("#dropdown").slideToggle("fast");
 		});
 	});
+</script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	$('#showmore').click(function(){
+		load();
+		$('#hidden').css("display", "block");
+		$(this).css("display", "none");
+	})
+	$('#hidden').click(function(){
+		remove();
+		$('#showmore').css("display", "block");
+		$(this).css("display", "none");
+		
+	})
+
+	function load() {
+		$.ajax({
+			type: 'GET', 
+			url: 'https://raw.githubusercontent.com/JunitaFani/JunitaFani.github.io/master/data.json',
+			data: { get_param: 'value' }, 
+			dataType: 'json',
+			success: function(data) {
+				$.each(data, function(index, elemen){
+					console.log('name '+elemen['judul'])
+					$('.news').append('<div class="konten" id="data"><img src="Pic/2.jpeg" class="foto"></img><h2>'+elemen['judul']+'</h2><p>'+elemen['konten']+'</p><a href="beritaDetail1.html" class="readmore">Detail</a></div>')
+				});
+			}
+		});
+	}
+
+	function remove() {
+		var hapus = document.querySelectorAll("#data");
+		$(hapus).remove();
+	}
 </script>
 </html>

@@ -28,10 +28,10 @@ function bacaGambar(input) {
 }
 
 // tambah Berita
-var modal = document.getElementById("tambahBerita");
+var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("tambah");
+var btn = document.getElementById("modal");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -53,44 +53,9 @@ window.onclick = function(event) {
   }
 }
 
-// <<<<<<< HEAD
-// // Get the modal
-// var modal1 = document.getElementById("myModal1");
-
-// // Get the button that opens the modal
-// var btn1 = document.getElementById("ubah");
-
-// // Get the <span> element that closes the modal
-// var span1 = document.getElementsByClassName("close1")[0];
-
-// // When the user clicks on the button, open the modal
-// =======
-// // Detail Berita
-// var modal1 = document.getElementById("detailBerita");
 
 
-// var btn1 = document.getElementById("detail");
 
-
-// var span1 = document.getElementsByClassName("close1")[0];
-
-
-// >>>>>>> f7f645fe7f3c109f7cefc577e0c37e564a673c47
-// btn1.onclick = function() {
-//   modal1.style.display = "block";
-// }
-
-
-// span1.onclick = function() {
-//   modal1.style.display = "none";
-// }
-
-
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal1.style.display = "none";
-//   }
-// }
 
 function validateForm() {
   var username = document.forms["myForm"]["username"].value;

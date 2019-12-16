@@ -107,6 +107,17 @@ input[type=text], input[type=password], select, textarea {
 	cursor: pointer;
 }
 
+.detail{
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: -15%;
+}
+
+.detail img{
+	margin-left: -5px;
+	margin-bottom: 5%;
+}
+
 @media only screen and (max-width: 1006px){
 	input[type=text], input[type=password], select, textarea {
 		width: 400px;

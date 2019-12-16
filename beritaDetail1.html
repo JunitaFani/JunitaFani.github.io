@@ -34,73 +34,72 @@
 										<a href="#">Kelas 12</a>
 									</div>
 								</li>
-								<li><a href="Home.html">Home</a></li>
+								<li><a href="Home.html" class="active">Home</a></li>
 							</ul>
 						</nav>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="berita">
-		<button id="tambah">Ubah</button>
-		<div id="myModal" class="modal">
-			<div class="modal-content">
-				<div class="modal-header">
-					<span class="close">&times;</span>
-					<h2>Ubah Berita</h2>
+		<div class="berita">
+			<button id="modal">Ubah</button>
+			<div id="myModal" class="popup">
+				<div class="isiPopup">
+					<div class="popup-header">
+						<span class="close">&times;</span>
+						<h2>Ubah Berita</h2>
+					</div>
+					<form name="myForm" action="">
+						<div class="popup-body">
+							<div class="form">
+								<label for="foto">Foto:</label><br>
+								<input type="file" name="gambar"/>
+							</div>
+							<div class="form">
+								<label for="judul">Judul:</label>
+								<input type="text" id="judul" name="judul" placeholder="Masukkan Judul" required>
+							</div>
+							<div class="form">
+								<label for="deskripsi">Deskripsi:</label>
+								<textarea type="text" rows="3" id="deskripsi" name="deskripsi" placeholder="Masukkan Deskripsi" required></textarea>
+							</div>
+						</div>
+						<div class="popup-footer">
+							<input type="submit" class="simpan" value="Simpan">
+						</div>
+					</form>
 				</div>
-				<form name="myForm" action="">
-					<div class="modal-body">
-						<div class="form">
-							<label for="foto">Foto:</label><br>
-							<input type="file" name="gambar"/>
-						</div>
-						<div class="form">
-							<label for="judul">Judul:</label>
-							<input type="text" id="judul" name="judul" placeholder="Masukkan Judul" required>
-						</div>
-						<div class="form">
-							<label for="deskripsi">Deskripsi:</label>
-							<textarea type="text" rows="3" id="deskripsi" name="deskripsi" placeholder="Masukkan Deskripsi" required></textarea>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<input type="submit" class="simpan" value="Simpan">
-					</div>
-				</form>
+			</div>
+			<div class="detail">
+				<h2 style="text-align: center;">Prestasi Tingkat Nasional SMA Negeri 2 Cirebon</h2>
+				<img src="Pic\2.jpeg" class="foto"></img>
+				<p>
+					Siswa dan Siswi SMA Negeri 2 Kota Cirebon kembali mendulang prestasi gemilang, salah satunya adalah Juara 1 Tingkat Nasional LCT Biologi di Universitas Indonesia selain itu berikut kejuaraan lainnya yang berhasil diraih selama bulan oktober dan november :
+					<br>
+					1. Juara 1 tingkat Nasional LCT Biologi Universitas Indonesia atas nama At-Thuur Maulana Rafatha, Triana Amelia  dan Angelina
+					<br>
+					2. Juara 1 Tingkat Jawa Barat LCT Matematika Unsil Tasikmalaya atas nama Adithya Rimba, Saiful Anwar dan M. Rayhan
+					<br>
+					3. Juara 1 Tingkat Jawa Barat Menulis Aksara Cirebon atas nama Ari Sucipto dan Juara 2 Tingkat Jawa Barat Tembang Cirebon atas nama Fahmi Maulana dalam acara Pasanggiri Basa Cerbon Dermayu
+					<br>
+					4. Juara 1 tingkat Jawa Barat Lomba Debat Bahasa Inggris di Universitas Kuningan atas nama , News Reading atas nama Rachel Sinaga dan Juara 1 Best Speaker atas nama Agnes Leonita
+					<br>
+					5. Juara 1 tingkat Ciayumajakuning LCT GPN atas nama Syifa Awalludin   
+				</p>
 			</div>
 		</div>
-		<h2 style="text-align: center;">Prestasi Tingkat Nasional SMA Negeri 2 Cirebon</h2>
-		<img src="Pic\2.jpeg" class="foto"></img>
-		<p>
-			Siswa dan Siswi SMA Negeri 2 Kota Cirebon kembali mendulang prestasi gemilang, salah satunya adalah Juara 1 Tingkat Nasional LCT Biologi di Universitas Indonesia selain itu berikut kejuaraan lainnya yang berhasil diraih selama bulan oktober dan november :
-			<br>
-			1. Juara 1 tingkat Nasional LCT Biologi Universitas Indonesia atas nama At-Thuur Maulana Rafatha, Triana Amelia  dan Angelina
-			<br>
-			2. Juara 1 Tingkat Jawa Barat LCT Matematika Unsil Tasikmalaya atas nama Adithya Rimba, Saiful Anwar dan M. Rayhan
-			<br>
-			3. Juara 1 Tingkat Jawa Barat Menulis Aksara Cirebon atas nama Ari Sucipto dan Juara 2 Tingkat Jawa Barat Tembang Cirebon atas nama Fahmi Maulana dalam acara Pasanggiri Basa Cerbon Dermayu
-			<br>
-			4. Juara 1 tingkat Jawa Barat Lomba Debat Bahasa Inggris di Universitas Kuningan atas nama , News Reading atas nama Rachel Sinaga dan Juara 1 Best Speaker atas nama Agnes Leonita
-			<br>
-			5. Juara 1 tingkat Ciayumajakuning LCT GPN atas nama Syifa Awalludin   
-		</p>
+		<div class="footer">
+			<div class="tulisanKiri">
+				<a title="Team">Team</a>
+				<a title="Contact">Contact</a>
+			</div>
+			<div class="tulisanKanan">
+				<img src="Pic\tw.png">
+				<img src="Pic\fb.png">
+				<img src="Pic\ig.png">
+			</div>
+		</div>
 	</div>
-</div>
-</div>
-<hr size="2px" >
-<div class="footer">
-	<div class="tulisanKiri">
-		<a title="Team">Team</a>
-		<a title="Contact">Contact</a>
-	</div>
-	<div class="tulisanKanan">
-		<img src="Pic\tw.png">
-		<img src="Pic\fb.png">
-		<img src="Pic\ig.png">
-	</div>
-</div>
 <script src="js/jquery.js"></script>
 <script src="js/js.js"></script>
 <script>

@@ -30,6 +30,19 @@ img{
 	margin-top: 10px;
 }
 
+#showmore, #hidden{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 40px;
+	border-radius: 5px;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+	position: relative;
+	margin-top: 10px;
+}
+
 .news{
 	padding: 20px;
 	background-color: white;

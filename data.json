@@ -1,0 +1,34 @@
+
+[
+  {
+    "judul"		:"Judul berita 1",
+    "konten"	:"konten berita",
+    "link"		:""
+  },
+  {
+    "judul"		:"Judul berita 2",
+    "konten"	:"konten berita",
+    "link"		:""
+  },
+  {
+    "judul"		:"Judul berita 3",
+    "konten"	:"konten berita",
+    "link"		:""
+  },
+  {
+    "judul"		:"Judul berita 4",
+    "konten"	:"konten berita",
+    "link"		:""
+  },
+  {
+    "judul"		:"Judul berita 5",
+    "konten"	:"konten berita",
+    "link"		:""
+  },
+  {
+    "judul"		:"Judul berita 6",
+    "konten"	:"konten berita",
+    "link"		:""
+  }
+  
+]

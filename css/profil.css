@@ -1,21 +1,26 @@
-body {
-    margin: 0;
-	padding: 0;
-	background-color: LightGray;
-	font-family: verdana;
-	font-size:20px;
-}
 
 .konten{
 	display: flex;
 	position: relative;
 	float: left;
-	padding: 93px 3px;
-	padding-bottom: 15%;
+	padding: 10% 30%;
+	padding-bottom: -15%;
+}
+
+.konten1{
+	display: flex;
+	position: relative;
+	float: left;
+	padding: 10% 10%;
+	padding-bottom: -15%;
 }
 
 .profil{
-  padding-left: 350px;
+	padding-left: 40px;
+	margin-top: 30px;
+	font-family: verdana;
+	font-size:20px;
+	text-align: justify;
 }
 
 .konten .foto{
@@ -24,7 +29,7 @@ body {
 	text-align: center;
 }
 
-.konten .foto img{
+.konten  img{
 	height:200px;
 	width:200px;
 }
@@ -32,7 +37,26 @@ body {
 .konten .form{
 	display: flex;
 	padding-top: 0px;
-	padding-left: 40%;
+	padding-left: 10%;
+}
+
+.konten1 .foto{
+	/* display: flex; */
+	margin-left: 10%;
+	text-align: center;
+	margin-top: -10%;
+}
+
+.konten1  img{
+	height:200px;
+	width:200px;
+}
+
+.konten1 .form{
+	display: flex;
+	padding-top: 0px;
+	padding-left: 10%;
+	margin-top: -10%;
 }
 
 .active{
@@ -57,7 +81,7 @@ p {
     padding-left: 15px;
 }
 
-.row:after {
+.baris:after {
     content: "";
     display: table;
     clear: both;
@@ -70,6 +94,49 @@ hr{
 #gmbr5{
     padding-top: 42px;
 }
+
+.kolom-4,
+.kolom-8{
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+
+.kolom-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.kolom-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.baris {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.kotakProfile{
+	min-height:20px;
+	padding:19px;
+	margin-bottom:20px;
+	background-color:#f5f5f5;
+	border:1px solid #e3e3e3;
+	border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.05);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,0.05);
+}
+
+
+.deskripsi{
+	float: right;
+}
+
 
 input[type=text], input[type=password], select, textarea {
 	width: 500px;

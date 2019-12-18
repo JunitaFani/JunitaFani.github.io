@@ -3,8 +3,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ruang Belajar/Materi</title>
-  <link rel="stylesheet" type="text/css" href="css/Materi.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/Materi.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="Pic/rb.jpg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -15,7 +15,7 @@
         <div class="menu">
           <div class="logo">
             <a href="">
-              <img src="Pic\rb.jpg">
+              <img src="../Pic\rb.jpg">
             </a>
           </div>
           <div class="main">
@@ -25,7 +25,7 @@
                 <li><a href="index.html">Logout</a></li>
                 <li><a href="bantuan.html">Bantuan</a></li>
                 <li><a href="Profil.html" >Profil</a></li>
-                <li><a href="utbk.html" class="active">UTBK</a></li>
+                <li><a href="utbk.html" >UTBK</a></li>
                 <li class="dropdown1">
                   <a href="javascript:void(0)" class="dropbtn">Materi</a>
                   <div class="dropdown1-content">
@@ -64,16 +64,9 @@
         </div>
       </div>
       <div class="detail-materi">
-          <div id="page1-wrap" class="tombol">
-              <div class="group" id="nav1">
-                  <a href="editMateri">Ubah</a>
-                  <a href="#">Hapus</a>
-              </div>
-          </div>
         <section id="main-content">
           <div class="con-det-materi">
-            <div class="video1">
-              <div class="h2">
+                <div class="h2">
                   <h1>Latihan dan Pembahasan</h1>
                 </div>
                 <br>
@@ -134,36 +127,36 @@
               </div>
             </div>
           </section>
-      </div>
+        </div>
+      </div>   
     </div>
-  </div>
-  <script src="js/jquery.js"></script>
-  <script src="js/js.js"></script>
-  <script>
-    $(document).ready(function() {
-      $("#toggle").click(function() {
-        $("#dropdown2").slideToggle("fast");
+    <script src="../js/jquery.js"></script>
+    <script src="../js/js.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#toggle").click(function() {
+          $("#dropdown2").slideToggle("fast");
+        });
       });
-    });
-  </script>
-  <script>
-    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-    
-    for (i = 0; i < dropdown.length; i++) {
-      dropdown[i].addEventListener("click", function() {
-        this.classList.toggle("activee");
-        var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-          dropdownContent.style.display = "none";
-        } else {
-          dropdownContent.style.display = "block";
-        }
-      });
-    }
-  </script>
-   <script src="js/jquery-1.12.0.min.js"></script>
-   <script src="js/main.js"></script>
-</body>
-</html>
+    </script>
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("activee");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+  </html>

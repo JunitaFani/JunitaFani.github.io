@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Ruang Belajar/SignUp</title>
+	<title>Ruang Belajar/Sign In</title>
 	<link rel="stylesheet" type="text/css" href="css/loginSignup.css">
 	<link rel="shortcut icon" type="image/x-icon" href="Pic/rb.jpg" />
 </head>
@@ -10,35 +10,27 @@
 <body>
 	<div class="box">
 		<div>
-			<h1 style="font-size: 35px;">Login</h1>
+			<h1 style="font-size: 35px;">Sign In</h1>
 		</div>
 		<div class="konten">
 			<div class="form">
-				<form name="myForm" onsubmit="return validateForm()" action="Home.html	">
-					<input type="text" id="username" name="username" required pattern="[A-Za-z]+" placeholder="Username">
+				<form name="myForm" onsubmit="return validateForm();" action="User/Home.html" >
+					<input type="text" id="username" name="username"  pattern="[A-Za-z]+" placeholder="Username">
 					<br>
 					<input type="password" id="password" name="pasword" placeholder="Password">
 					<br>
-					<br> <button onclick="window.location.href='index.html'">Kembali</button>&nbsp;&nbsp;&nbsp;
-					<input type="submit" value="Login">
+					<br> <button  onclick="window.location.href='index.html'">Kembali</button>&nbsp;&nbsp;&nbsp;
+					<input  type="submit" value="Login">
 				</form>
 			</div>
 		</div>
+		<div id="popup-peringatan">
+			<span class="close" onclick="this.parentElement.style.display='none';">&times;</span> 
+			<strong>Peringatan!</strong><br> 
+			Username atau Password Kosong
+		</div>
 	</div>
-	<script>
-		function validateForm() {
-			var username = document.forms["myForm"]["username"].value;
-			var password = document.forms["myForm"]["password"].value;
-
-			if (username == "") {
-				alert("Username harus diisi");
-				return false;
-			} if (password == "") {
-				alert("Password harus diisi");
-				return false;
-			}
-		}
-	</script>
 </body>
-
+<script src="js/jquery.js"></script>
+<script src="js/js.js"></script>
 </html>

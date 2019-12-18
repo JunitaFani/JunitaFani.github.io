@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-    
     var readURL = function(input) {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
@@ -13,7 +11,6 @@ $(document).ready(function() {
         }
     }
     
-
     $(".file-upload").on('change', function(){
         readURL(this);
     });
@@ -30,11 +27,11 @@ function bacaGambar(input) {
     }
 }
 
-// Get the modal
+// tambah Berita
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("tambah");
+var btn = document.getElementById("modal");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -53,11 +50,12 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+   
   }
 }
 
-// Get the modal
-var modal1 = document.getElementById("myModal1");
+// ubah Banner
+var modal1 = document.getElementById("ubahBanner");
 
 // Get the button that opens the modal
 var btn1 = document.getElementById("ubah");
@@ -79,5 +77,28 @@ span1.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal1) {
     modal1.style.display = "none";
+   
   }
 }
+
+
+
+function validateForm() {
+  var username = document.forms["myForm"]["username"].value;
+  var password = document.forms["myForm"]["password"].value;
+  var a =0;
+  var b = 0;
+
+
+  if (username == "" || password == "") {
+    if(a == 0){
+        document.getElementById("popup-peringatan").style.display="block";
+        a = 1;
+    }
+
+    return false;
+  }
+}
+
+
+

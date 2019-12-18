@@ -1,6 +1,6 @@
 
 
-$('#main-content').load('informasi_pribadi.html');
+$('#main-content').load('detailPangkat.html');
 
 $('div#nav1 a').click(function(){
   var page = $(this).attr('href')

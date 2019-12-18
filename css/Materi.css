@@ -8,18 +8,42 @@ html, body {
     height: 100%;
 }
 
-.tombol :hover {
+/* .tombol :hover {
 	background-color: #45a049;
+} */
+
+a {
+    text-decoration: none !important;
 }
 
 .tombol a {
 	background-color: #4CAF50;
 	color: white;
-	padding: 7px 7px;
+	padding: 10px 10px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
 }
+
+.tombol{
+	padding-left: 80%;
+	margin-top: 10%;
+	padding-right: 30px;
+	line-height: 50px;
+	color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	bottom: 0px;
+	position: relative;
+	
+  }
+
+
+
+
+
+
 
 input[type=text], input[type=password], select, textarea {
 	width: 500px;
@@ -162,7 +186,7 @@ a[type=submit]:hover {
 
   .detail-materi{
 	height: 100%;
-	width: 850px;
+	width: 950px;
 	margin-left: -150px;
 	margin-top: -30px;
   }
@@ -172,28 +196,21 @@ a[type=submit]:hover {
   }
 
   .video1{
-    padding: 5px 6px;
+    padding: 5px 26px;
     width: auto;
     margin: 15px 10px 10px 10px;
     color: black;
-    float: left;
+    float: right;
   }
 
-  .tombol{
-    padding: 14px 16px;
-    width: auto;
-	color: black;
-	margin-left: 850px;
-	margin-top: 10px;
-  }
   
 .h2 {
 	font-size: 30px;
 	text-align: center;
 	margin-left: 75px;
 }
-
-.h2 input[input[type=submit]]
+/* 
+.h2 input[input[type=submit]] */
 
 /* responsive */
 @media only screen and (max-width: 1367px){

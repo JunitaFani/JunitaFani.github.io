@@ -42,8 +42,27 @@
 			</div>
 		</div>
 		<div class="banner">
-			<button onclick="window.location.href='#.html'">Ubah</button>
+			<button id="ubah" onclick="window.location.href='#.html'">Ubah</button>
 			<img src="Pic\newrb.jpg">
+			<div id="ubahBanner" class="popup">
+				<div class="isiPopup">
+					<div class="popup-header">
+						<span class="close1">&times;</span>
+						<h2>Ubah Banner</h2>
+					</div>
+					<form name="myForm" action="">
+						<div class="popup-body">
+							<div class="form">
+								<label for="foto">Foto:</label><br>
+								<input type="file" name="gambar"/>
+							</div>
+						</div>
+						<div class="popup-footer">
+							<input type="submit" class="simpan" value="Simpan">
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 		<div class="berita">
 			<h1 style="text-align: center;">Berita Pendidikan</h1>
@@ -76,6 +95,7 @@
 				</div>
 			</div>
 		</div>	
+
 		<div class="news">
 			<div class="konten">
 				<img src="Pic\2.jpeg" class="foto"></img>

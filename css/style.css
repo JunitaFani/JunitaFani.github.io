@@ -2,15 +2,14 @@ html, body{
 	height: 100%;
 }
 
-/* body {
+body {
 	margin: 0;
 	padding: 0;
 	background-color: white;
-	font-family: verdana;
-	font-size:20px;
-	padding-bottom:10px;
-	height: 100%;
-} */
+	font-family: "Comic Sans MS";
+	font-size:15px;
+	
+}
 
 body{
 	display: flex;
@@ -252,6 +251,10 @@ p {
 	font-family: "Comic Sans MS";
 }
 
+label{
+	font-family: "Roboto";
+}
+
 .row:after {
 	content: "";
 	display: table;
@@ -371,11 +374,9 @@ hr{
 	border: 1px solid #888;
 	width: 80%;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-	-webkit-animation-name: animatetop;
-	-webkit-animation-duration: 0.4s;
-	animation-name: animatetop;
-	animation-duration: 0.4s
 }
+
+
 
 .popup-header {
 	padding: 2px 16px;
@@ -393,16 +394,7 @@ hr{
 	color: white;
 }
 
-  /* Add Animation */
-@-webkit-keyframes animatetop {
-	from {top:-300px; opacity:0} 
-	to {top:0; opacity:1}
-}
 
-@keyframes animatetop {
-	from {top:-300px; opacity:0}
-	to {top:0; opacity:1}
-}
 
 .close,
 .close1 {
